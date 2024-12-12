@@ -294,6 +294,8 @@ body {
 }
 
 .get-started {
+  position: relative;
+  z-index: 1;
   &__body {
     display: flex;
     flex-direction: column;

@@ -3,9 +3,11 @@
 footer {
   .foot-top {
     background: #f8f8f8;
-    padding: rem(65) 0 rem(80) 0;
+    padding: rem(120) 0 rem(80) 0;
+    margin-top: -40px;
     @media (max-width: rem(992)) {
-      padding: rem(48) 0;
+      padding: rem(120) 0 rem(48) 0;
+      margin-top: -70px;
     }
     .row {
       display: flex;
