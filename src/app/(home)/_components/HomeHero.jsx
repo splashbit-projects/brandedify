@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HomeHero = () => {
   return (
-    <div className="home-hero">
+    <section className="home-hero">
       <div className="_container">
         <div className="home-hero__body">
           <div className="top">
@@ -79,7 +79,7 @@ const HomeHero = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
