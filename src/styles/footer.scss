@@ -1,1 +1,59 @@
 @use "mixin" as *;
+
+footer {
+  .foot-top {
+    background: #f8f8f8;
+    padding: rem(65) 0 rem(80) 0;
+    .row {
+      display: flex;
+      gap: rem(64);
+      .col {
+        width: 20%;
+        &:first-child {
+          min-width: rem(246);
+        }
+        p{
+            color: #535862;
+            font-size: rem(16);
+            margin-top: rem(26);
+        }
+        h3{
+            margin-bottom: rem(26);
+            font-size: rem(16);
+            font-weight: 700;
+            font-family: var(--font-helvetica-light);
+        }
+        nav {
+          display: flex;
+          flex-direction: column;
+          gap: rem(20);
+          a{
+            color: #485169;
+            font-size: rem(16);
+          }
+        }
+      }
+    }
+  }
+  .foot-copy{
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding: rem(30) 0;
+        align-items: center;
+        p{
+            color: #535862;
+            font-size: rem(16);
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: rem(20);
+            a{
+              color: #485169;
+              font-size: rem(16);
+            }
+          }
+    }
+  }
+}

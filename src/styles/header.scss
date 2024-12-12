@@ -1,1 +1,49 @@
 @use "mixin" as *;
+
+header {
+    padding: rem(20) 0;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      display: flex;
+      &.head-button {
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: rem(12) rem(18);
+        border-radius: rem(50);
+        background: #6f6ff9;
+        color: #fff;
+        font-weight: 400;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      a {
+        padding: rem(15) rem(20);
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+        font-size: rem(16);
+        color: #030A1D;
+        &.current{
+            background: #F8F8F8;
+            border-radius: rem(50);
+            &:before{
+                content: '';
+                display: block;
+                width: rem(8);
+                height: rem(8);
+                background: #6F6FF9;
+                border-radius: 50%;
+            }
+        }
+      }
+    }
+  }
+}

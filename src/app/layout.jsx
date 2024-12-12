@@ -21,6 +21,17 @@ const helvetica = localFont({
   ],
 });
 
+const satoshi = localFont({
+  src: [
+    {
+      path: "./fonts/Satoshi-Regular.woff",
+      weight: "400",
+      style: "normal",
+      variable: "--font-satoshi",
+    },
+  ],
+});
+
 export const metadata = {
   title: "Brandedify",
   description: "",
@@ -29,7 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={helvetica.className}>
+      <body className={satoshi.className}>
         <Header />
         <main>{children}</main>
         <Footer />

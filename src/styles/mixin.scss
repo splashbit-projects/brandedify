@@ -1,5 +1,10 @@
 @use "sass:math";
 
+:root {
+  --font-helvetica: "Helvetica", sans-serif; 
+  --font-helvetica-light: "Helvetica Light", sans-serif; 
+}
+
 @function rem($pixel) {
   @if math.is-unitless($pixel) {
     @return math.div($pixel, 16) + rem;
