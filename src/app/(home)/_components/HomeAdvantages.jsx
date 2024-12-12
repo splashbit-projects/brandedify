@@ -2,6 +2,7 @@
 import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
+import AdvantagesSlider from "./AdvantagesSlider";
 
 const HomeAdvantages = () => {
   return (
@@ -21,6 +22,7 @@ const HomeAdvantages = () => {
             </div>
             <h2>Why Choose Our Services?</h2>
           </motion.div>
+          <AdvantagesSlider />
         </div>
       </div>
     </section>

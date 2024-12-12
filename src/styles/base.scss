@@ -205,6 +205,12 @@ body {
   padding: 0 rem(40);
   background: linear-gradient(92.34deg, #4040b1 0%, #7373ff 98.04%);
   border-radius: rem(30);
+  font-size: rem(16);
+  @media (max-width: rem(992)) {
+    height: rem(44);
+    padding: 0 rem(24);
+    font-size: rem(14);
+  }
 }
 .gray-button {
   display: block;
@@ -218,6 +224,10 @@ body {
   );
   padding: rem(1);
   border-radius: rem(30);
+  font-size: rem(16);
+  @media (max-width: rem(992)) {
+    height: rem(44);
+  }
   > span {
     display: flex;
     align-items: center;
@@ -227,6 +237,11 @@ body {
     height: inherit;
     border-radius: rem(30);
     color: #ffffffe5;
+    font-size: rem(16);
+    @media (max-width: rem(992)) {
+      padding: 0 rem(11);
+      font-size: rem(14);
+    }
   }
 }
 
@@ -236,6 +251,10 @@ body {
   align-items: center;
   gap: rem(20);
   margin-bottom: rem(68);
+  @media (max-width: rem(992)) {
+    gap: rem(12);
+    margin-bottom: rem(38);
+  }
   .label {
     display: flex;
     align-items: center;
@@ -252,6 +271,12 @@ body {
     font-family: var(--font-helvetica-light);
     font-size: rem(44);
     text-align: center;
+    @media (max-width: rem(992)) {
+      font-size: rem(26);
+      br {
+        display: none;
+      }
+    }
   }
   p {
     color: #030a1de5;
@@ -259,6 +284,12 @@ body {
     text-align: center;
     line-height: 1.2;
     font-weight: 400;
+    @media (max-width: rem(992)) {
+      font-size: rem(14);
+      br {
+        display: none;
+      }
+    }
   }
 }
 
@@ -272,6 +303,9 @@ body {
     background-size: cover;
     padding: rem(100) rem(16);
     border-radius: rem(20);
+    @media (max-width: rem(992)) {
+      padding: rem(74) rem(20);
+    }
     h2 {
       font-weight: 700;
       font-family: var(--font-helvetica-light);
@@ -281,12 +315,22 @@ body {
       text-align: center;
       font-size: rem(50);
       line-height: 1.2;
+      @media (max-width: rem(992)) {
+        font-size: rem(32);
+      }
     }
     p {
       margin: rem(24) 0 rem(30) 0;
       color: #ffffffe5;
       font-size: rem(16);
       text-align: center;
+      @media (max-width: rem(992)) {
+        font-size: rem(14);
+        margin: rem(20) 0 rem(40) 0;
+        br {
+          display: none;
+        }
+      }
     }
   }
 }

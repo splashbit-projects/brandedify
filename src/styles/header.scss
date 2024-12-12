@@ -1,7 +1,7 @@
 @use "mixin" as *;
 
 header {
-    padding: rem(20) 0;
+  padding: rem(20) 0;
   .row {
     display: flex;
     align-items: center;
@@ -19,29 +19,35 @@ header {
         background: #6f6ff9;
         color: #fff;
         font-weight: 400;
+        @media (max-width: rem(992)) {
+          display: none;
+        }
       }
     }
     nav {
       display: flex;
       align-items: center;
+      @media (max-width: rem(992)) {
+        display: none;
+      }
       a {
         padding: rem(15) rem(20);
         display: flex;
         align-items: center;
         gap: rem(8);
         font-size: rem(16);
-        color: #030A1D;
-        &.current{
-            background: #F8F8F8;
-            border-radius: rem(50);
-            &:before{
-                content: '';
-                display: block;
-                width: rem(8);
-                height: rem(8);
-                background: #6F6FF9;
-                border-radius: 50%;
-            }
+        color: #030a1d;
+        &.current {
+          background: #f8f8f8;
+          border-radius: rem(50);
+          &:before {
+            content: "";
+            display: block;
+            width: rem(8);
+            height: rem(8);
+            background: #6f6ff9;
+            border-radius: 50%;
+          }
         }
       }
     }

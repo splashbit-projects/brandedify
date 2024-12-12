@@ -4,30 +4,44 @@ footer {
   .foot-top {
     background: #f8f8f8;
     padding: rem(65) 0 rem(80) 0;
+    @media (max-width: rem(992)) {
+      padding: rem(48) 0;
+    }
     .row {
       display: flex;
       gap: rem(64);
+      @media (max-width: rem(992)) {
+        flex-wrap: wrap;
+        column-gap: rem(30);
+        row-gap: rem(48);
+      }
       .col {
         width: 20%;
+        @media (max-width: rem(992)) {
+          width: calc(50% - rem(15));
+        }
         &:first-child {
           min-width: rem(246);
+          @media (max-width: rem(992)) {
+            width: 100%;
+          }
         }
-        p{
-            color: #535862;
-            font-size: rem(16);
-            margin-top: rem(26);
+        p {
+          color: #535862;
+          font-size: rem(16);
+          margin-top: rem(26);
         }
-        h3{
-            margin-bottom: rem(26);
-            font-size: rem(16);
-            font-weight: 700;
-            font-family: var(--font-helvetica-light);
+        h3 {
+          margin-bottom: rem(26);
+          font-size: rem(16);
+          font-weight: 700;
+          font-family: var(--font-helvetica-light);
         }
         nav {
           display: flex;
           flex-direction: column;
           gap: rem(20);
-          a{
+          a {
             color: #485169;
             font-size: rem(16);
           }
@@ -35,25 +49,35 @@ footer {
       }
     }
   }
-  .foot-copy{
-    .row{
-        display: flex;
-        justify-content: space-between;
-        padding: rem(30) 0;
+  .foot-copy {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: rem(30) 0;
+      align-items: center;
+      @media (max-width: rem(992)) {
+        flex-direction: column;
         align-items: center;
-        p{
-            color: #535862;
-            font-size: rem(16);
+        gap: rem(20);
+      }
+      p {
+        color: #535862;
+        font-size: rem(16);
+      }
+      nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: rem(20);
+        @media (max-width: rem(992)) {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: rem(10);
         }
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            gap: rem(20);
-            a{
-              color: #485169;
-              font-size: rem(16);
-            }
-          }
+        a {
+          color: #485169;
+          font-size: rem(16);
+        }
+      }
     }
   }
 }
