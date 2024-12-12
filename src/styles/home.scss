@@ -126,6 +126,20 @@
 
 .home-partners {
   margin: rem(120) 0;
+  .buttons {
+    display: flex;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      gap: rem(8);
+      color: #6f6ff9;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: left;
+    }
+  }
 }
 
 .home-details {
@@ -175,5 +189,19 @@
 }
 
 .home-stories {
-    margin: rem(120) 0;
+  margin: rem(120) 0;
+  .buttons {
+    display: flex;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      gap: rem(8);
+      color: #6f6ff9;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: left;
+    }
   }
+}

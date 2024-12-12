@@ -2,6 +2,7 @@
 import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HomePartners = () => {
   return (
@@ -29,6 +30,18 @@ const HomePartners = () => {
               challenges and achieve measurable, impactful results tailored to
               their goals.
             </p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="buttons"
+          >
+            <Link href="#">
+              <span>Learn More About Us</span>
+              <img src="/images/arrow-purple.svg" />
+            </Link>
           </motion.div>
         </div>
       </div>

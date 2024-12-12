@@ -2,6 +2,7 @@
 import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HomeStories = () => {
   return (
@@ -27,6 +28,18 @@ const HomeStories = () => {
               lasting customer <br />
               relationships, our results speak for themselves.
             </p>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="buttons"
+          >
+            <Link href="#">
+              <span>How We Deliver Results</span>
+              <img src="/images/arrow-purple.svg" />
+            </Link>
           </motion.div>
         </div>
       </div>
