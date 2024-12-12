@@ -51,5 +51,73 @@ header {
         }
       }
     }
+
+    .menu-btn {
+      display: none;
+      @media (max-width: rem(992)) {
+        display: flex;
+        width: rem(56);
+        height: rem(38);
+        background: #f8f8f8;
+        border-radius: rem(20);
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.menu-wrap {
+  margin-top: rem(77);
+  background: #ffffff;
+  height: calc(100vh - rem(77));
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: rem(24) 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  ._container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    nav {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: rem(20);
+      a {
+        padding: rem(15) rem(20);
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+        font-size: rem(16);
+        color: #030a1d;
+        &.current {
+          background: #f8f8f8;
+          border-radius: rem(50);
+          &:before {
+            content: "";
+            display: block;
+            width: rem(8);
+            height: rem(8);
+            background: #6f6ff9;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .main-button{
+      width: 100%;
+    }
   }
 }
