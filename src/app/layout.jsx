@@ -33,8 +33,15 @@ const satoshi = localFont({
 });
 
 export const metadata = {
-  title: "Brandedify",
-  description: "",
+  title: "Brandedify | Innovative Digital Marketing Solutions for Your Brand",
+  description:
+    "Transform your business with Brandedify's cutting-edge digital marketing strategies tailored to amplify growth, engagement, and success.",
+  openGraph: {
+    title: "Brandedify | Innovative Digital Marketing Solutions for Your Brand",
+    description:
+      "Transform your business with Brandedify's cutting-edge digital marketing strategies tailored to amplify growth, engagement, and success.",
+    //images: "",
+  },
 };
 
 export default function RootLayout({ children }) {
