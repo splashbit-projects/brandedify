@@ -1,0 +1,66 @@
+@use "mixin" as *;
+
+.agency {
+  margin-bottom: rem(200);
+  margin-top: rem(24);
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .col-01 {
+      width: rem(184);
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+      padding: rem(12);
+      background: #f8f8f8;
+      border-radius: rem(12);
+      position: sticky;
+      top: rem(10);
+      a {
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: 1.1;
+        text-align: left;
+        color: #7f7f7f;
+        &.active {
+          color: #000000;
+          &::before {
+            content: "";
+            display: block;
+            width: rem(8);
+            height: rem(8);
+            border-radius: 50%;
+            background: #6f6ff9;
+          }
+        }
+      }
+    }
+    .col-02 {
+      width: rem(590);
+      display: flex;
+      flex-direction: column;
+      gap: rem(90);
+      .section-title {
+        margin-bottom: rem(20);
+      }
+      .content {
+        p {
+          font-size: rem(16);
+          font-weight: 400;
+          line-height: 1.2;
+          text-align: left;
+          color: #030a1de5;
+          margin-bottom: rem(20);
+        }
+      }
+    }
+
+    .col-03 {
+      width: rem(184);
+    }
+  }
+}
