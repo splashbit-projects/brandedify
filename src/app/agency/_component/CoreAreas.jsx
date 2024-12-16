@@ -66,12 +66,20 @@ const CoreAreas = () => {
             </div>
           </div>
         </motion.div>
-        <Image
-          src="/images/agency/core1.png"
-          width={590}
-          height={430}
-          alt="core1"
-        />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <Image
+            src="/images/agency/core1.png"
+            width={590}
+            height={430}
+            alt="core1"
+          />
+        </motion.div>
+
         <motion.h3
           initial="hidden"
           whileInView="visible"

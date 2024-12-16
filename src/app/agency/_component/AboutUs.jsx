@@ -36,12 +36,20 @@ const AboutUs = () => {
           strategies that help brands stand out, grow, and succeed in a
           competitive marketplace.
         </motion.p>
-        <Image
-          src="/images/agency/about1.png"
-          width={590}
-          height={296}
-          alt="about1"
-        />
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <Image
+            src="/images/agency/about1.png"
+            width={590}
+            height={296}
+            alt="about1"
+          />
+        </motion.div>
         <motion.h3
           initial="hidden"
           whileInView="visible"
@@ -122,12 +130,19 @@ const AboutUs = () => {
           forward-thinking methodologies ensure every campaign delivers results
           and leaves a lasting impact on your target audience.
         </motion.p>
-        <Image
-          src="/images/agency/about2.png"
-          width={590}
-          height={170}
-          alt="about1"
-        />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <Image
+            src="/images/agency/about2.png"
+            width={590}
+            height={170}
+            alt="about1"
+          />
+        </motion.div>
       </div>
     </>
   );

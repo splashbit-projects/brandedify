@@ -121,12 +121,19 @@ const OurTeam = () => {
           forward-thinking methodologies ensure every campaign delivers results
           and leaves a lasting impact on your target audience.
         </motion.p>
-        <Image
-          src="/images/agency/team1.png"
-          width={590}
-          height={430}
-          alt="core1"
-        />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <Image
+            src="/images/agency/team1.png"
+            width={590}
+            height={430}
+            alt="core1"
+          />
+        </motion.div>
       </div>
     </>
   );
