@@ -1,0 +1,23 @@
+import React from "react";
+import "@/styles/services.scss";
+import services from "@/lib/services";
+import ServicesHero from "./_components/ServicesHero";
+import GetStarted from "@/components/GetStarted";
+import ServicesLoop from "./_components/ServicesLoop";
+
+const Services = () => {
+  return (
+    <>
+      <ServicesHero />
+      <ServicesLoop serviceArray={services} />
+      <GetStarted
+        title={"Find the Right Plan for Your Business"}
+        text="Our services are designed to fit businesses of all sizes, from startups to enterprises. Explore <br>our flexible pricing options and find the perfect package tailored to your goals."
+        buttonText={"View Pricing Plans"}
+        link="#"
+      />
+    </>
+  );
+};
+
+export default Services;
