@@ -27,7 +27,7 @@ const GetStarted = () => {
             let's create a personalized <br />
             strategy that drives measurable results and lasting success.
           </motion.p>
-          <Link href="#" className="main-button">
+          <Link href="/contact" className="main-button">
             <span>Get started</span>
             <img src="/images/arrow.svg" />
           </Link>
