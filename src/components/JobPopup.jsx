@@ -21,7 +21,44 @@ function JobPopup() {
     position: Yup.string().required("This field is required."),
     //resume: Yup.mixed(),
     //portfolio: Yup.mixed(),
-    //comments: Yup.string(),
+    resume: Yup.mixed()
+      .required("A file is required!")
+      .test(
+        "fileSize",
+        "File size must be less than 10MB",
+        (value) => !value || (value && value.size <= 10 * 1024 * 1024)
+      )
+      .test(
+        "fileType",
+        "Unsupported file format. Allowed formats: PDF, DOC, DOCX",
+        (value) =>
+          !value ||
+          (value &&
+            [
+              "application/pdf",
+              "application/msword",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            ].includes(value.type))
+      ),
+    portfolio: Yup.mixed()
+      .required("A file is required!")
+      .test(
+        "fileSize",
+        "File size must be less than 10MB",
+        (value) => !value || (value && value.size <= 10 * 1024 * 1024)
+      )
+      .test(
+        "fileType",
+        "Unsupported file format. Allowed formats: PDF, DOC, DOCX",
+        (value) =>
+          !value ||
+          (value &&
+            [
+              "application/pdf",
+              "application/msword",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            ].includes(value.type))
+      ),
   });
 
   const initialValues = {
@@ -147,15 +184,17 @@ function JobPopup() {
                           <PhoneInput
                             country={countryCode}
                             value={values.phone || ""}
-                            onChange={(value) =>
-                              setFieldValue("phone", value)
-                            }
+                            onChange={(value) => setFieldValue("phone", value)}
                             placeholder="Enter your phone number"
                             className={
                               touched.phone && errors.phone ? "invalid" : ""
                             }
                           />
-                          <ErrorMessage name="phone" component="span" />
+                          <ErrorMessage
+                            name="phone"
+                            component="div"
+                            className="error"
+                          />
                         </div>
 
                         {/* Position Field */}
@@ -189,7 +228,10 @@ function JobPopup() {
                               document.getElementById("resume").click()
                             }
                           >
-                            <img src="/images/contact/upload.svg" alt="upload" />
+                            <img
+                              src="/images/contact/upload.svg"
+                              alt="upload"
+                            />
                             <label>Choose file</label>
                             <span>
                               {values.resume
@@ -222,7 +264,10 @@ function JobPopup() {
                               document.getElementById("portfolio").click()
                             }
                           >
-                            <img src="/images/contact/upload.svg" alt="upload" />
+                            <img
+                              src="/images/contact/upload.svg"
+                              alt="upload"
+                            />
                             <label>Choose file</label>
                             <span>
                               {values.portfolio

@@ -55,6 +55,7 @@
     }
     @media (max-width: rem(992)) {
       padding: 40px 24px;
+      justify-content: flex-start;
     }
     .popup-close {
       position: absolute;
@@ -79,9 +80,15 @@
         margin-bottom: rem(12);
         width: 100%;
         display: block;
+        @media (max-width: rem(992)) {
+          font-size: rem(16);
+        }
       }
       > p {
         margin-bottom: rem(20);
+        @media (max-width: rem(992)) {
+          font-size: rem(14);
+        }
       }
       form {
         display: flex;
@@ -128,6 +135,13 @@
           }
 
           .react-tel-input {
+            .error {
+              font-size: rem(12);
+              font-weight: 400;
+              line-height: 1;
+              text-align: left;
+              color: #f00;
+            }
             input {
               border: none;
               height: auto;
@@ -170,7 +184,7 @@
             width: 100%;
           }
           .error {
-            margin-top: rem(20);
+            margin-top: rem(8);
             font-size: rem(12);
             font-weight: 400;
             line-height: 1;
@@ -236,6 +250,10 @@
           background: #6f6ff9;
           width: rem(120);
           margin-left: auto;
+          @media (max-width: rem(992)) {
+            width: 100%;
+            margin-top: rem(30);
+          }
         }
       }
     }

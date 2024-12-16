@@ -1,7 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { fadeInUp } from "@/utils/animations";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import AboutUs from "./AboutUs";
 import OurTeam from "./OurTeam";
@@ -11,8 +9,55 @@ import CareersAtBrandedify from "./CareersAtBrandedify";
 const AgencyBlock = () => {
   const [anchor, setAnchor] = useState("about-us");
 
+  // Refs for each section
+  const aboutUsRef = useRef(null);
+  const ourTeamRef = useRef(null);
+  const coreAreasRef = useRef(null);
+  const careersRef = useRef(null);
+
+  const sections = [
+    { id: "about-us", ref: aboutUsRef },
+    { id: "our-team", ref: ourTeamRef },
+    { id: "core-areas-of-expertise", ref: coreAreasRef },
+    { id: "careers-at-brandedify", ref: careersRef },
+  ];
+
+  const handleScroll = () => {
+    let closestSection = "about-us"; // Default section
+    let minDistance = Infinity;
+
+    sections.forEach((section) => {
+      const rect = section.ref.current?.getBoundingClientRect();
+      if (rect) {
+        const distance = Math.abs(rect.top);
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestSection = section.id;
+        }
+      }
+    });
+
+    setAnchor(closestSection);
+  };
+
+  useEffect(() => {
+    // Attach scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check
+    handleScroll();
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleAnchor = (value) => {
-    setAnchor(value);
+    
+    // Scroll to the section
+    document.getElementById(value)?.scrollIntoView({ behavior: "smooth" });
+    //setAnchor(value);
   };
 
   return (
@@ -52,18 +97,18 @@ const AgencyBlock = () => {
             </Link>
           </div>
           <div className="col-02">
-            <div id="about-us">
+            <div id="about-us" ref={aboutUsRef}>
               <img src="/images/agency/arrow1.svg" />
               <AboutUs />
             </div>
-            <div id="our-team">
+            <div id="our-team" ref={ourTeamRef}>
               <img src="/images/agency/arrow2.svg" />
               <OurTeam />
             </div>
-            <div id="core-areas-of-expertise">
+            <div id="core-areas-of-expertise" ref={coreAreasRef}>
               <CoreAreas />
             </div>
-            <div id="careers-at-brandedify">
+            <div id="careers-at-brandedify" ref={careersRef}>
               <CareersAtBrandedify />
             </div>
           </div>
