@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/agency.scss";
 import AgencyBlock from "./_component/AgencyBlock";
+import JobPopup from "@/components/JobPopup";
 
 export const metadata = {
   title: "About Brandedify | Your Trusted Digital Marketing Agency",
@@ -18,6 +19,7 @@ const Agency = () => {
   return (
     <>
       <AgencyBlock />
+      <JobPopup />
     </>
   );
 };

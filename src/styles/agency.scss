@@ -3,10 +3,17 @@
 .agency {
   margin-bottom: rem(200);
   margin-top: rem(24);
+  @media (max-width: rem(992)) {
+    margin-bottom: rem(100);
+  }
   &__body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @media (max-width: rem(992)) {
+      flex-direction: column;
+      gap: rem(40);
+    }
     .col-01 {
       width: rem(184);
       display: flex;
@@ -17,6 +24,15 @@
       border-radius: rem(12);
       position: sticky;
       top: rem(10);
+      @media (max-width: rem(992)) {
+        width: calc(100% + rem(32));
+        margin-left: -1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow-x: auto;
+        border-radius: 0;
+      }
       a {
         display: flex;
         align-items: center;
@@ -26,6 +42,9 @@
         line-height: 1.1;
         text-align: left;
         color: #7f7f7f;
+        @media (max-width: rem(992)) {
+          white-space: nowrap;
+        }
         &.active {
           color: #000000;
           &::before {
@@ -44,10 +63,19 @@
       display: flex;
       flex-direction: column;
       gap: rem(90);
+      @media (max-width: rem(992)) {
+        width: 100%;
+      }
       .section-title {
         margin-bottom: rem(20);
       }
       .content {
+        > img {
+          @media (max-width: rem(992)) {
+            width: 100%;
+            height: auto;
+          }
+        }
         p {
           font-size: rem(16);
           font-weight: 400;
@@ -81,6 +109,10 @@
           display: flex;
           gap: rem(20);
           margin: rem(20) 0;
+          @media (max-width: rem(992)) {
+            flex-wrap: wrap;
+            gap: rem(12);
+          }
           &.col {
             flex-direction: column;
             .item {
@@ -101,6 +133,10 @@
                 rgba(115, 115, 255, 0.2) 100%
               );
             padding: 1px;
+            @media (max-width: rem(992)) {
+              width: calc(50% - rem(6));
+              flex-grow: 1;
+            }
             > div {
               background: #f8f8f8;
               border-radius: rem(12);
@@ -122,6 +158,89 @@
               p {
                 margin: 0;
               }
+            }
+          }
+        }
+
+        .position {
+          margin: rem(20) 0;
+          padding: rem(20);
+          background: #f8f8f8;
+          border-radius: rem(16);
+          display: flex;
+          gap: rem(20);
+          align-items: flex-start;
+          @media (max-width: rem(992)) {
+            flex-direction: column;
+            gap: rem(16);
+          }
+          .left {
+            width: rem(185);
+            background: #fff;
+            border-radius: rem(12);
+            padding: rem(20);
+            @media (max-width: rem(992)) {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              gap: rem(10);
+            }
+            > div {
+              width: 100%;
+              height: rem(145);
+              background-size: cover;
+              background-position: center;
+              border-radius: rem(12);
+              @media (max-width: rem(992)) {
+                width: rem(20);
+                height: rem(20);
+                border-radius: 50%;
+                background-size: 400%;
+              }
+            }
+            p {
+              text-align: center;
+              margin: rem(16) 0 0 0;
+              font-size: rem(14);
+              @media (max-width: rem(992)) {
+                margin: 0;
+              }
+            }
+          }
+          .right {
+            width: calc(100% - rem(205));
+            display: flex;
+            flex-direction: column;
+            gap: rem(20);
+            @media (max-width: rem(992)) {
+              width: 100%;
+            }
+            > div {
+              display: flex;
+              flex-direction: column;
+              gap: rem(12);
+              h3 {
+                margin: 0;
+              }
+              p {
+                background: #fff;
+                padding: rem(20);
+                border-radius: rem(12);
+                margin: 0;
+              }
+            }
+            button {
+              color: #fff;
+              font-size: rem(16);
+              font-weight: 400;
+              line-height: 1;
+              text-align: center;
+              height: rem(40);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: rem(20);
+              background: #6f6ff9;
             }
           }
         }
