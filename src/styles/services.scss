@@ -205,7 +205,7 @@
           font-size: rem(14);
           text-align: center;
         }
-        button {
+        button, a {
           color: #fff;
           font-size: rem(16);
           font-weight: 400;
@@ -218,6 +218,7 @@
           border-radius: rem(20);
           background: #6f6ff9;
           padding: 0 rem(20);
+          width: fit-content;
         }
       }
     }
@@ -232,7 +233,7 @@
           }
         }
       }
-      button {
+      button, a {
         color: #fff;
         font-size: rem(16);
         font-weight: 400;
@@ -246,6 +247,7 @@
         background: #6f6ff9;
         padding: 0 rem(20);
         margin: rem(36) auto 0 auto;
+        width: fit-content;
         @media (max-width: rem(992)) {
           margin: rem(20) auto 0 auto;
         }
