@@ -87,6 +87,9 @@
         display: flex;
         gap: rem(20);
         flex-wrap: wrap;
+        @media (max-width: rem(992)) {
+          gap: rem(10);
+        }
         .input-wrap {
           width: calc(50% - rem(10));
           background: #f8f8f8;
@@ -199,12 +202,19 @@
               color: #030a1d;
               display: block;
               margin: rem(8) 0 rem(4) 0;
+              @media (max-width: rem(992)) {
+                font-size: rem(12);
+                margin: rem(4) 0 0 0;
+              }
             }
             span {
               max-width: rem(300);
               text-align: center;
               color: #030a1db2;
               font-size: rem(12);
+              @media (max-width: rem(992)) {
+                display: none;
+              }
             }
             input {
               display: none;

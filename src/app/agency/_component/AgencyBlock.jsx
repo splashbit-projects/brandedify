@@ -53,9 +53,11 @@ const AgencyBlock = () => {
           </div>
           <div className="col-02">
             <div id="about-us">
+              <img src="/images/agency/arrow1.svg" />
               <AboutUs />
             </div>
             <div id="our-team">
+              <img src="/images/agency/arrow2.svg" />
               <OurTeam />
             </div>
             <div id="core-areas-of-expertise">
