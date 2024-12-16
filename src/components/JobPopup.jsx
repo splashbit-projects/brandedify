@@ -127,10 +127,12 @@ function JobPopup() {
                     <div className="success">
                       <img src="/images/success.svg" alt="success" />
                       <h3>
-                        Thank you for choosing <br />
-                        Brandedify!
+                        The application has <br />
+                        been sent
                       </h3>
-                      <p>Our representative will reach out to you shortly.</p>
+                      <p>
+                        We will definitely give you an answer within 2 weeks
+                      </p>
                     </div>
                   ) : (
                     <>
