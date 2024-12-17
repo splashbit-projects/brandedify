@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Plus from "@/app/icons/Plus";
+import Plus from "@/icons/Plus";
 import ComparisonTable from "./ComparisonTable";
 
 const ServicesLoop = ({ serviceArray }) => {
