@@ -5,6 +5,18 @@ import ServicesHero from "./_components/ServicesHero";
 import GetStarted from "@/components/GetStarted";
 import ServicesLoop from "./_components/ServicesLoop";
 
+export const metadata = {
+  title: "Brandedify Services | Comprehensive Digital Marketing Solutions",
+  description:
+    "Explore Brandedify’s range of services, including SEO, PPC, Social Media Marketing, Content Marketing, Email Marketing, and Marketing Automation.",
+  openGraph: {
+    title: "Brandedify Services | Comprehensive Digital Marketing Solutions",
+    description:
+      "Explore Brandedify’s range of services, including SEO, PPC, Social Media Marketing, Content Marketing, Email Marketing, and Marketing Automation.",
+    //images: "",
+  },
+};
+
 const Services = () => {
   return (
     <>
