@@ -56,7 +56,7 @@ const AdvantagesSlider = () => {
         <div className="slide-last">
           <h2>Explore All Services</h2>
           <p>Learn more about our services</p>
-          <Link href="#" className="gray-button">
+          <Link href="/services" className="gray-button">
             <span>
               Learn more
               <img src="/images/arrow.svg" />
