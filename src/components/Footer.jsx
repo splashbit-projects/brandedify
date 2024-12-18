@@ -21,9 +21,9 @@ const Footer = () => {
             <div className="col">
               <h3>Agency</h3>
               <nav>
-                <Link href="#">About Us</Link>
-                <Link href="#">Our Team</Link>
-                <Link href="#">Careers</Link>
+                <Link href="/agency#about-us">About Us</Link>
+                <Link href="/agency#our-team">Our Team</Link>
+                <Link href="/agency#careers-at-brandedify">Careers</Link>
                 <Link href="#">Results</Link>
                 <Link href="#">Resources</Link>
                 <Link href="#">FAQ</Link>
@@ -33,21 +33,21 @@ const Footer = () => {
             <div className="col">
               <h3>Services</h3>
               <nav>
-                <Link href="#">SEO Optimization</Link>
-                <Link href="#">PPC Advertising</Link>
-                <Link href="#">Social Media Marketing</Link>
-                <Link href="#">Content Marketing</Link>
-                <Link href="#">Email Marketing</Link>
-                <Link href="#">Marketing Automation</Link>
+                <Link href="/services#seo-optimization">SEO Optimization</Link>
+                <Link href="/services#ppc-advertising">PPC Advertising</Link>
+                <Link href="/services#social-media-marketing">Social Media Marketing</Link>
+                <Link href="/services#content-marketing">Content Marketing</Link>
+                <Link href="/services#email-marketing">Email Marketing</Link>
+                <Link href="/services#marketing-automation">Marketing Automation</Link>
               </nav>
             </div>
             <div className="col">
               <h3>Solutions</h3>
               <nav>
-                <Link href="#">Lead Generation</Link>
-                <Link href="#">Brand Awareness</Link>
-                <Link href="#">Customer Retention</Link>
-                <Link href="#">Sales Enablement</Link>
+                <Link href="/solutions#lead-generation">Lead Generation</Link>
+                <Link href="/solutions#brand-awareness">Brand Awareness</Link>
+                <Link href="/solutions#customer-retention">Customer Retention</Link>
+                <Link href="/solutions#sales-enablement">Sales Enablement</Link>
               </nav>
             </div>
             <div className="col">
