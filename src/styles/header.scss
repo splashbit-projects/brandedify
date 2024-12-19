@@ -2,6 +2,10 @@
 
 header {
   padding: rem(20) 0;
+  //position: sticky;
+  //top: 0;
+  //z-index: 999;
+  //background: #fff;
   .row {
     display: flex;
     align-items: center;
@@ -27,6 +31,7 @@ header {
     nav {
       display: flex;
       align-items: center;
+      
       @media (max-width: rem(992)) {
         display: none;
       }
@@ -37,6 +42,9 @@ header {
         gap: rem(8);
         font-size: rem(16);
         color: #030a1d;
+        @media (max-width: rem(1100)) {
+          padding: rem(0) rem(10);
+        }
         &.current {
           background: #f8f8f8;
           border-radius: rem(50);
