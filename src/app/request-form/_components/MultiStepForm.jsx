@@ -2,14 +2,14 @@
 import { useState } from "react";
 import { Formik, Form, Field, ErrorMessage, useFormikContext } from "formik";
 import * as Yup from "yup";
-import useContactFormStore from "@/stores/contactFormStore";
+import useRequestFormStore from "@/stores/requestFormStore";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 import useCountryCode from "@/utils/useCountryCode";
 import usePopupStore from "@/stores/popupStore";
 
 const MultiStepForm = () => {
-  const { step, setStep } = useContactFormStore();
+  const { step, setStep } = useRequestFormStore();
   const [isOtherSelected, setIsOtherSelected] = useState(false);
   const countryCode = useCountryCode();
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopupStore();
@@ -286,7 +286,7 @@ const MultiStepForm = () => {
                 className="upload-custom"
                 onClick={() => document.getElementById("file").click()}
               >
-                <img src="/images/contact/upload.svg" />
+                <img src="/images/request-form/upload.svg" />
                 <label>Choose file</label>
                 <span>
                   {field.value

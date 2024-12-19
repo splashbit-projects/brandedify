@@ -11,7 +11,7 @@
     .col-01 {
       width: 45%;
       padding: rem(50) rem(30);
-      background-image: url(/images/contact/bg.svg);
+      background-image: url(/images/request-form/bg.svg);
       background-position: center;
       background-size: cover;
       background-color: #f8f8f8;
@@ -292,7 +292,7 @@
                   border-radius: rem(7);
                   &:checked {
                     background-color: #7373ff;
-                    background-image: url(/images/contact/check.svg);
+                    background-image: url(/images/request-form/check.svg);
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: rem(14);
@@ -307,7 +307,7 @@
                   border-radius: 50%;
                   &:checked {
                     background-color: #7373ff;
-                    background-image: url(/images/contact/check.svg);
+                    background-image: url(/images/request-form/check.svg);
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: rem(14);

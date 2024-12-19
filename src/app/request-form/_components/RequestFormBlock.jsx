@@ -2,12 +2,12 @@
 import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
-import useContactFormStore from "@/stores/contactFormStore";
+import useRequestFormStore from "@/stores/requestFormStore";
 import MultiStepForm from "./MultiStepForm";
 import usePopupStore from "@/stores/popupStore";
 
-const ContactBlock = () => {
-  const { step } = useContactFormStore();
+const RequestFormBlock = () => {
+  const { step } = useRequestFormStore();
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopupStore();
 
   const closePopup = () => {
@@ -46,7 +46,7 @@ const ContactBlock = () => {
                 </motion.p>
               </div>
               <div className="steps">
-                <img src="/images/contact/line.svg" />
+                <img src="/images/request-form/line.svg" />
                 <div className={`${step >= 1 ? "active" : ""} step`}>
                   Business Data
                 </div>
@@ -107,4 +107,4 @@ const ContactBlock = () => {
   );
 };
 
-export default ContactBlock;
+export default RequestFormBlock;

@@ -1,6 +1,6 @@
 import React from "react";
-import "@/styles/contact.scss";
-import ContactBlock from "./_components/ContactBlock";
+import "@/styles/request-form.scss";
+import RequestFormBlock from "./_components/RequestFormBlock";
 
 
 export const metadata = {
@@ -19,7 +19,7 @@ export const metadata = {
 const Contact = () => {
   return (
     <>
-      <ContactBlock />
+      <RequestFormBlock />
     </>
   );
 };

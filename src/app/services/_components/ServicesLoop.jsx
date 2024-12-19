@@ -119,7 +119,7 @@ const ServicesLoop = ({ serviceArray }) => {
                   className="bottom"
                 >
                   <p dangerouslySetInnerHTML={{ __html: service.extra }} />
-                  <Link href="/contact">Order {service.title}</Link>
+                  <Link href="/request-form">Order {service.title}</Link>
                 </motion.div>
               </div>
             ))}
@@ -229,7 +229,7 @@ const ServicesLoop = ({ serviceArray }) => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="/contact">Let’s Match Services to Your Goals</Link>
+                <Link href="/request-form">Let’s Match Services to Your Goals</Link>
               </motion.div>
             </div>
           </div>

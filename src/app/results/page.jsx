@@ -29,7 +29,7 @@ const Results = () => {
         title={"Let's Achieve Results Together"}
         text="Ready to transform your business? Explore how we can help you achieve measurable success <br>through our tailored solutions."
         buttonText={"Contact Us Today"}
-        link="/contact"
+        link="/request-form"
       />
     </>
   );

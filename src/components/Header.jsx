@@ -80,7 +80,7 @@ const Header = () => {
                 Contact
               </Link>
             </nav>
-            <Link href="#" className="head-button">
+            <Link href="/request-form" className="head-button">
               Get started
             </Link>
             <button
@@ -143,13 +143,13 @@ const Header = () => {
               FAQ
             </Link>
             <Link
-              href="/contact"
-              className={pathname === "/contact" ? "current" : ""}
+              href="/request-form"
+              className={pathname === "/request-form" ? "current" : ""}
             >
               Contact
             </Link>
           </nav>
-          <Link href="/contact" className="main-button">
+          <Link href="/request-form" className="main-button">
             <span>Get started</span>
             <img src="/images/arrow.svg" />
           </Link>

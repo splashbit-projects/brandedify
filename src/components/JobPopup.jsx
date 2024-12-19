@@ -231,7 +231,7 @@ function JobPopup() {
                             }
                           >
                             <img
-                              src="/images/contact/upload.svg"
+                              src="/images/request-form/upload.svg"
                               alt="upload"
                             />
                             <label>Choose file</label>
@@ -267,7 +267,7 @@ function JobPopup() {
                             }
                           >
                             <img
-                              src="/images/contact/upload.svg"
+                              src="/images/request-form/upload.svg"
                               alt="upload"
                             />
                             <label>Choose file</label>

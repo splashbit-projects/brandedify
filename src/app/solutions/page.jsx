@@ -26,7 +26,7 @@ const Solutions = () => {
         title={"Take the Next Step"}
         text="Ready to drive results? Get in touch with us today to learn more about how our solutions can <br>transform your business."
         buttonText={"Book a Free Consultation"}
-        link="/contact"
+        link="/request-form"
       />
     </>
   );

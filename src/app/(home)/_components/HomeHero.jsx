@@ -41,7 +41,7 @@ const HomeHero = () => {
                 <span>Get started</span>
                 <img src="/images/arrow.svg" />
               </Link>
-              <Link href="/contact" className="gray-button">
+              <Link href="/request-form" className="gray-button">
                 <span>Book a Consultation</span>
               </Link>
               <img src="/images/home/decor.svg" />

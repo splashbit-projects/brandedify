@@ -29,7 +29,7 @@ const GetStarted = ({ title, text, buttonText, link }) => {
             }}
           />
 
-          <Link href={link ? link : "/contact"} className="main-button">
+          <Link href={link ? link : "/request-form"} className="main-button">
             <span>{buttonText ? buttonText : "Get started"}</span>
             <img src="/images/arrow.svg" />
           </Link>
