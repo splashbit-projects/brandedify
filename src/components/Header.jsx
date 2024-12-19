@@ -149,7 +149,7 @@ const Header = () => {
               Contact
             </Link>
           </nav>
-          <Link href="#" className="main-button">
+          <Link href="/contact" className="main-button">
             <span>Get started</span>
             <img src="/images/arrow.svg" />
           </Link>
