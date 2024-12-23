@@ -7,6 +7,15 @@ import Plus from "@/icons/Plus";
 import RequestForm from "./RequestForm";
 
 const PricingLoop = ({ pricingArray }) => {
+  const [selectedPackage, setSelectedPackage] = useState("");
+
+  const handlePackage = (value) => {
+    setSelectedPackage(value);
+    document
+      .getElementById("request-form")
+      ?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="pricing-loop">
       <div className="_container">
@@ -68,7 +77,9 @@ const PricingLoop = ({ pricingArray }) => {
                       className="price"
                       dangerouslySetInnerHTML={{ __html: pricing.price }}
                     />
-                    <Link href="#request-form">{pricing.orderText}</Link>
+                    <button onClick={() => handlePackage(pricing.title)}>
+                      {pricing.orderText}
+                    </button>
                   </div>
                 </div>
               </motion.div>
@@ -88,7 +99,7 @@ const PricingLoop = ({ pricingArray }) => {
                     <span>Package Request Form</span>
                   </div>
                 </div>
-                <RequestForm />
+                <RequestForm packageValue={selectedPackage} />
               </div>
             </motion.div>
           </div>

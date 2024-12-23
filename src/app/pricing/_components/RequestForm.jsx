@@ -7,7 +7,7 @@ import PhoneInput from "react-phone-input-2";
 import useCountryCode from "@/utils/useCountryCode";
 import Select from "react-select";
 
-const RequestForm = () => {
+const RequestForm = ({ packageValue }) => {
   const countryCode = typeof window !== "undefined" ? useCountryCode() : "us";
 
   const packages = [
@@ -110,7 +110,7 @@ const RequestForm = () => {
     phone: "",
     companyName: "",
     website: "",
-    service: "",
+    service: packageValue,
     budget: "",
     message: "",
   };
@@ -159,6 +159,9 @@ const RequestForm = () => {
                     }
                     placeholder="Select Package Name"
                     instanceId="service-select"
+                    value={packages.find(
+                      (pkg) => pkg.value === packageValue
+                    )}
                   />
 
                   <ErrorMessage
