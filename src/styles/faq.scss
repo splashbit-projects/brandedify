@@ -34,6 +34,25 @@
   @media (max-width: rem(992)) {
     margin: rem(100) 0;
   }
+  &__body {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 120px;
+      top: -20px;
+      width: rem(170);
+      height: rem(112);
+      background: url(/images/faq/text.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @media (max-width: rem(992)) {
+        display: none;
+      }
+    }
+  }
   .section-title {
     margin-bottom: rem(20);
   }
@@ -55,6 +74,7 @@
           rgba(115, 115, 255, 0.2) 100%
         );
       border-radius: rem(12);
+      padding: 1px;
       &.opened {
         .inner {
           .top {
@@ -66,7 +86,7 @@
       }
       .inner {
         background: #f8f8f8;
-
+        height: 100%;
         border-radius: rem(12);
         cursor: pointer;
         .top {
