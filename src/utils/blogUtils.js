@@ -10,22 +10,37 @@ export async function getPost(slug, locale) {
     fileSlug = `DE-${slug}`;
   }
 
-  const text = await readFile(`./src/lib/courses/${fileSlug}.md`, "utf8");
+  const text = await readFile(`./src/lib/resources/${fileSlug}.md`, "utf8");
   const {
     content,
-    data: { title, seo_title, seo_description, thumbnail, poster_desc, poster_mobile, back_desc, back_mobile },
+    data: { title, excerpt, short_description, seo_title, seo_description, thumbnail, category },
   } = matter(text);
   const body = marked(content);
-  return { slug: fileSlug, title, seo_title, seo_description, thumbnail, poster_desc, poster_mobile, back_desc, back_mobile, body };
+  return { slug: fileSlug, title, excerpt, short_description,  seo_title, seo_description, thumbnail, category, body };
 }
 
 export async function getSlugs() {
-  const files = await readdir("./src/lib/courses");
+  const files = await readdir("./src/lib/resources");
   return files
     .filter((file) => file.endsWith(".md"))
     .map((file) => file.slice(0, -".md".length));
 }
 
+export async function getPosts(locale = "en") {
+  const slugs = await getSlugs();
+  const posts = [];
+
+  for (const slug of slugs) {
+    try {
+      const post = await getPost(slug, locale);
+      posts.push(post);
+    } catch (error) {
+      console.error(`Error reading post with slug: ${slug}`, error);
+    }
+  }
+
+  return posts;
+}
 
 export async function getPage(slug, locale) {
   let fileSlug = slug;
