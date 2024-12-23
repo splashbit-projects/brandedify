@@ -26,7 +26,7 @@ const Footer = () => {
                 <Link href="/agency#careers-at-brandedify">Careers</Link>
                 <Link href="/results">Results</Link>
                 <Link href="#">Resources</Link>
-                <Link href="#">FAQ</Link>
+                <Link href="/faq">FAQ</Link>
                 <Link href="#">Pricing</Link>
               </nav>
             </div>
