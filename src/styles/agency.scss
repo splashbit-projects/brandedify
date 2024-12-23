@@ -67,6 +67,11 @@
       @media (max-width: rem(992)) {
         width: 100%;
       }
+      img{
+        @media (max-width: rem(992)) {
+          height: auto;
+        }
+      }
       > div {
         position: relative;
         > img {
