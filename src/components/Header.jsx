@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import "@/styles/header.scss";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const pathname = usePathname();
