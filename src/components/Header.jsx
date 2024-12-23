@@ -19,6 +19,11 @@ const Header = () => {
     document.body.classList.remove("no-scroll");
   };
 
+  useEffect(() => {
+    setMenuOpened(false);
+    document.body.classList.remove("no-scroll");
+  }, [pathname]);
+
   return (
     <>
       <header>
