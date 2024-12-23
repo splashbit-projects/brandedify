@@ -34,6 +34,19 @@ const OurTeam = () => {
           We are problem solvers and storytellers, working together to create
           powerful marketing strategies that resonate with your audience.
         </motion.p>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <Image
+            src="/images/agency/team.png"
+            width={590}
+            height={296}
+            alt="core1"
+          />
+        </motion.div>
         <motion.h2
           initial="hidden"
           whileInView="visible"

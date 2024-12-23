@@ -25,9 +25,9 @@ const Footer = () => {
                 <Link href="/agency#our-team">Our Team</Link>
                 <Link href="/agency#careers-at-brandedify">Careers</Link>
                 <Link href="/results">Results</Link>
-                <Link href="#">Resources</Link>
+                <Link href="/resources">Resources</Link>
                 <Link href="/faq">FAQ</Link>
-                <Link href="#">Pricing</Link>
+                <Link href="/pricing">Pricing</Link>
               </nav>
             </div>
             <div className="col">
