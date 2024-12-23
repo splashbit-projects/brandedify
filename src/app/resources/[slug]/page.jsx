@@ -73,12 +73,52 @@ const PostInner = async ({ params }) => {
           </div>
         </div>
       </section>
-      <GetStarted
-        title={"Ready to Grow with Us?"}
-        text="Let's partner to achieve your business goals. Reach out today, and let's create a personalized <br>strategy that drives measurable results and lasting success."
-        buttonText={"Get started"}
-        link="/request-form"
-      />
+      {slug == "the-future-of-seo-key-trends-to-watch-in-2025" && (
+        <GetStarted
+          title={"Ready to Grow with Us?"}
+          text="Let's partner to achieve your business goals. Reach out today, and let's create a personalized <br>strategy that drives measurable results and lasting success."
+          buttonText={"Get started"}
+          link="/request-form"
+        />
+      )}
+      {slug == "social-media-marketing-in-a-post-cookie-world" && (
+        <GetStarted
+          title={"Ready to future-proof your <br>campaigns? Let's talk!"}
+          text=" "
+          buttonText={"Contact Us for a Free Strategy Session"}
+          link="/request-form"
+        />
+      )}
+      {slug ==
+        "10-proven-strategies-to-boost-your-websites-conversion-rate" && (
+        <GetStarted
+          title={"Need Help Optimizing Your Website?"}
+          text="Let our experts take your website to the next level."
+          buttonText={"Contact Us for a Free Consultation"}
+          link="/request-form"
+        />
+      )}
+      {slug == "how-to-craft-high-performing-ppc-campaigns-on-a-budget" && (
+        <GetStarted link="/request-form" />
+      )}
+      {slug ==
+        "the-power-of-personalization-how-to-engage-customers-with-tailored-campaigns" && (
+        <GetStarted
+          title={"Ready to Personalize Your <br>Campaigns?"}
+          text="Our experts can help you craft customized strategies to elevate your brand and deliver results."
+          buttonText={"Contact Us for Personalized Solutions"}
+          link="/request-form"
+        />
+      )}
+      {slug ==
+        "5-steps-to-building-a-strong-brand-identity-online" && (
+        <GetStarted
+          title={"Need Help Crafting Your Brand <br>Identity?"}
+          text="Let our experts guide you through every step of the process to ensure your brand makes a <br>powerful impact online."
+          buttonText={"Contact Us to Build Your Brand"}
+          link="/request-form"
+        />
+      )}
     </>
   );
 };

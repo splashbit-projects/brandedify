@@ -14,9 +14,10 @@ const GetStarted = ({ title, text, buttonText, link }) => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
-          >
-            {title ? title : "Ready to Grow with Us?"}
-          </motion.h2>
+            dangerouslySetInnerHTML={{
+              __html: title ? title : "Ready to Grow with Us?",
+            }}
+          />
           <motion.p
             initial="hidden"
             whileInView="visible"
