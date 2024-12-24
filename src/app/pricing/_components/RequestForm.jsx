@@ -115,16 +115,44 @@ const RequestForm = ({ packageValue }) => {
     message: "",
   };
 
-  const handleSubmit = async (
-    values,
-    { setSubmitting, resetForm, setStatus }
-  ) => {
-    console.log("Form values being submitted: ", values);
-
-    setSubmitting(false);
-    resetForm();
-    setStatus({ success: true });
+  const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
+    try {
+      // Prepare the form data
+      const formData = {
+        fullName: values.fullName,
+        email: values.email,
+        phone: values.phone,
+        companyName: values.companyName,
+        website: values.website,
+        service: values.service,
+        budget: values.budget,
+        message: values.message,
+      };
+  
+      // Send the data to the server
+      const response = await fetch("/api/pricing", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error("Failed to submit the form.");
+      }
+  
+      // Reset the form and show success message
+      resetForm();
+      setStatus({ success: true });
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      setStatus({ success: false });
+    } finally {
+      setSubmitting(false);
+    }
   };
+  
 
   return (
     <div className="request-form">

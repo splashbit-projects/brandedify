@@ -312,7 +312,7 @@ const MultiStepForm = () => {
     </>,
   ];
 
-  const handleSubmit = async (
+  /*const handleSubmit = async (
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
@@ -325,6 +325,83 @@ const MultiStepForm = () => {
     } else {
       setStep(step + 1);
     }
+  };*/
+
+  const handleSubmit = async (
+    values,
+    { setSubmitting, resetForm, setStatus }
+  ) => {
+    if (step === stepsContent.length) {
+      try {
+        const prepareFile = async (file) => {
+          if (!file) return null;
+          const data = await new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result.split(",")[1]); // Exclude data prefix
+            reader.onerror = (error) => reject(error);
+            reader.readAsDataURL(file);
+          });
+          return { filename: file.name, mimeType: file.type, data };
+        };
+
+        const file = await prepareFile(values.file);
+
+        const formData = {
+          fullName: values.fullName,
+          email: values.email,
+          phone: values.phone,
+          companyName: values.companyName,
+          website: values.website,
+          service: values.service,
+          otherService: values.otherService || null,
+          budget: values.budget,
+          goals: values.goals,
+          age: values.age,
+          gender: values.gender,
+          location: values.location,
+          interests: values.interests,
+          timeline: values.timeline,
+          contactMethod: values.contactMethod,
+          file
+        };
+  
+        // Send the request to the backend
+        const response = await fetch("/api/request", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        if (!response.ok) {
+          throw new Error("Failed to send form data.");
+        }
+  
+        // Reset form state and show success message
+        setStep(1);
+        resetForm();
+        setStatus({ success: true });
+        setThanksPopupDisplay(true);
+      } catch (error) {
+        console.error("Error submitting the form:", error);
+        setStatus({ success: false });
+      } finally {
+        setSubmitting(false);
+      }
+    } else {
+      setStep(step + 1);
+    }
+  };
+  
+  // Utility function to convert file to Base64
+  const convertFileToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result);
+      reader.onerror = () => reject(reader.error);
+      reader.readAsDataURL(file);
+    });
   };
 
   return (

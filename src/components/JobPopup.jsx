@@ -80,16 +80,54 @@ function JobPopup() {
     values,
     { setSubmitting, resetForm, setStatus }
   ) => {
-    const valuesWithService = {
-      ...values,
-      service: `${jobValue} Request`,
-    };
+    try {
+      // Prepare form data with Base64 file attachments
+      const prepareFile = async (file) => {
+        if (!file) return null;
+        const data = await new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result.split(",")[1]); // Exclude data prefix
+          reader.onerror = (error) => reject(error);
+          reader.readAsDataURL(file);
+        });
+        return { filename: file.name, mimeType: file.type, data };
+      };
 
-    console.log("Form values being submitted: ", valuesWithService);
+      const resume = await prepareFile(values.resume);
+      const portfolio = await prepareFile(values.portfolio);
 
-    setSubmitting(false);
-    resetForm();
-    setStatus({ success: true });
+      const formData = {
+        fullName: values.fullName,
+        email: values.email,
+        phone: values.phone,
+        position: values.position,
+        resume,
+        portfolio,
+        comments: values.comments,
+      };
+
+      // Send form data to the server
+      const response = await fetch("/api/job", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit application.");
+      }
+
+      // Reset form and show success message
+      resetForm();
+      setStatus({ success: true });
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      setStatus({ success: false });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
