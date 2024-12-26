@@ -18,15 +18,15 @@ const ContactRow = () => {
             <div className="inner">
               <div>
                 <h3>Where We Work</h3>
-                <Link href="#">OFFICE ADDRESS</Link>
+                <Link href="#">1 Paya Lebar Link, Singapore 408533</Link>
               </div>
               <div>
-                <h3>Of icial Correspondence</h3>
-                <Link href="#">REGISTERED ADDRESS</Link>
+                <h3>Official Correspondence</h3>
+                <Link href="#">133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413</Link>
               </div>
               <div>
                 <h3>Get in Touch</h3>
-                <Link href="#">EMAIL</Link>
+                <Link href=":mailto:info@brandedify.com">info@brandedify.com</Link>
               </div>
               <div>
                 <h3>Speak with Us</h3>

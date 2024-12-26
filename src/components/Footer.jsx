@@ -53,9 +53,9 @@ const Footer = () => {
             <div className="col">
               <h3>Get in Touch</h3>
               <nav>
-                <Link href="#">OFFICE ADDRESS</Link>
-                <Link href="#">REGISTERED ADDRESS</Link>
-                <Link href="#">EMAIL</Link>
+                <Link href="#">1 Paya Lebar Link, Singapore 408533</Link>
+                <Link href="#">133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413</Link>
+                <Link href=":mailto:info@brandedify.com">info@brandedify.com</Link>
                 <Link href="#">NUMBER</Link>
                 <Link href="#">Facebook</Link>
                 <Link href="#">Instagram</Link>
