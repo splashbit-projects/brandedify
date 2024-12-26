@@ -94,18 +94,19 @@
       li {
         font-size: rem(16);
         color: #030a1de5;
-        display: flex;
+        //display: flex;
         align-items: center;
         gap: rem(10);
         &::before {
           content: "";
-          display: block;
+          display: inline-block;
           width: rem(14);
           height: rem(14);
           background-image: url(/images/faq/plus.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+          margin-right: 8px;
         }
       }
     }
