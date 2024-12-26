@@ -13,10 +13,16 @@ const Footer = () => {
               <Link href="#">
                 <img src="/images/Logo.svg" alt="Logo" />
               </Link>
-              <p>
-                Fuel Your Growth with Winning <br />
-                Digital Marketing Strategies
-              </p>
+              <div>
+                <img className="desktop" src="/images/footer_arrow.svg" />
+                <div className="text">
+                  <p>
+                    Fuel Your Growth with Winning <br />
+                    Digital Marketing Strategies
+                  </p>
+                  <img className="mobile" src="/images/footer_arrow_mob.svg" />
+                </div>
+              </div>
             </div>
             <div className="col">
               <h3>Agency</h3>
@@ -35,10 +41,16 @@ const Footer = () => {
               <nav>
                 <Link href="/services#seo-optimization">SEO Optimization</Link>
                 <Link href="/services#ppc-advertising">PPC Advertising</Link>
-                <Link href="/services#social-media-marketing">Social Media Marketing</Link>
-                <Link href="/services#content-marketing">Content Marketing</Link>
+                <Link href="/services#social-media-marketing">
+                  Social Media Marketing
+                </Link>
+                <Link href="/services#content-marketing">
+                  Content Marketing
+                </Link>
                 <Link href="/services#email-marketing">Email Marketing</Link>
-                <Link href="/services#marketing-automation">Marketing Automation</Link>
+                <Link href="/services#marketing-automation">
+                  Marketing Automation
+                </Link>
               </nav>
             </div>
             <div className="col">
@@ -46,24 +58,58 @@ const Footer = () => {
               <nav>
                 <Link href="/solutions#lead-generation">Lead Generation</Link>
                 <Link href="/solutions#brand-awareness">Brand Awareness</Link>
-                <Link href="/solutions#customer-retention">Customer Retention</Link>
+                <Link href="/solutions#customer-retention">
+                  Customer Retention
+                </Link>
                 <Link href="/solutions#sales-enablement">Sales Enablement</Link>
               </nav>
             </div>
             <div className="col">
               <h3>Get in Touch</h3>
               <nav>
-                <Link href="#">1 Paya Lebar Link, Singapore 408533</Link>
-                <Link href="#">133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413</Link>
-                <Link href=":mailto:info@brandedify.com">info@brandedify.com</Link>
-                <Link href="#">Facebook</Link>
-                <Link href="#">Instagram</Link>
-                <Link href="#">Twitter</Link>
+                <Link href="#">
+                  Office address:
+                  <br />1 Paya Lebar Link, Singapore 408533
+                </Link>
+                <Link href="#">
+                  Registered address:
+                  <br />
+                  133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413
+                </Link>
               </nav>
             </div>
           </div>
         </div>
       </div>
+      <div className="details">
+        <div className="_container">
+          <div className="soc">
+            <div className="left">
+              <Link href="#">
+                <img src="/images/foot_phone.svg" />
+                <span>+0 00 0000 00</span>
+              </Link>
+              <Link href="#">
+                <img src="/images/foot_mail.svg" />
+                <span>brandedify@gmail.com</span>
+              </Link>
+            </div>
+            <div className="right">
+              <Link href="#">
+                <img src="/images/foot_x.svg" />
+              </Link>
+              <Link href="#">
+                <img src="/images/foot_fb.svg" />
+              </Link>
+              <Link href="#">
+                <img src="/images/foot_inst.svg" />
+                <span>+3</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="foot-copy">
         <div className="_container">
           <div className="row">
