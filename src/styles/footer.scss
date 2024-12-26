@@ -14,13 +14,13 @@ footer {
       gap: rem(40);
       @media (max-width: rem(992)) {
         flex-wrap: wrap;
-        column-gap: rem(30);
+        column-gap: rem(20);
         row-gap: rem(48);
       }
       .col {
         width: 20%;
         @media (max-width: rem(992)) {
-          width: calc(50% - rem(15));
+          width: calc(50% - rem(10));
         }
         &:first-child {
           min-width: rem(246);
@@ -28,8 +28,11 @@ footer {
             width: 100%;
           }
         }
-        &:last-child{
+        &:last-child {
           width: 30%;
+          @media (max-width: rem(992)) {
+            width: calc(50% - rem(10));
+          }
         }
         p {
           color: #535862;
@@ -49,6 +52,9 @@ footer {
           a {
             color: #485169;
             font-size: rem(16);
+            @media (max-width: rem(992)) {
+              font-size: rem(14);
+            }
           }
         }
       }
