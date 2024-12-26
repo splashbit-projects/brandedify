@@ -11,7 +11,7 @@ footer {
     }
     .row {
       display: flex;
-      gap: rem(64);
+      gap: rem(40);
       @media (max-width: rem(992)) {
         flex-wrap: wrap;
         column-gap: rem(30);
@@ -27,6 +27,9 @@ footer {
           @media (max-width: rem(992)) {
             width: 100%;
           }
+        }
+        &:last-child{
+          width: 30%;
         }
         p {
           color: #535862;
