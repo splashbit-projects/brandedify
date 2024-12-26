@@ -115,10 +115,10 @@ const Footer = () => {
           <div className="row">
             <p>© {currentYear} Brandedify. All Rights Reserved</p>
             <nav>
-              <Link href="#">Terms and Conditions</Link>
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Cookie Policy</Link>
-              <Link href="#">Refund Policy</Link>
+              <Link href="/terms-and-conditions">Terms and Conditions</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/cookie-policy">Cookie Policy</Link>
+              <Link href="/refund-policy">Refund Policy</Link>
             </nav>
           </div>
         </div>
