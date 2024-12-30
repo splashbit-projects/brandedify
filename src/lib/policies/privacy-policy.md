@@ -142,4 +142,4 @@ We respond to GDPR-related requests within 30 days.
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 
-We are committed to protecting your privacy and addressing your concerns.
+2.  We are committed to protecting your privacy and addressing your concerns.

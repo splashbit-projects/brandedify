@@ -164,4 +164,4 @@ Brandedify is not liable for damages or losses arising from:
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 
-Our team is available during regular business hours to assist with inquiries and provide additional support. We aim to address your concerns promptly and ensure a smooth experience with Brandedify’s Services.
+2.  Our team is available during regular business hours to assist with inquiries and provide additional support. We aim to address your concerns promptly and ensure a smooth experience with Brandedify’s Services.

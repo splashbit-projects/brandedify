@@ -121,4 +121,4 @@ Cookies are integral to the smooth operation of our website. They:
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 
-Please provide as much detail as possible regarding your inquiry to help us address your concerns effectively.
+2.  Please provide as much detail as possible regarding your inquiry to help us address your concerns effectively.
