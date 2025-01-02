@@ -59,9 +59,9 @@ const HomeHero = () => {
                 <img src="/images/phone.svg" />
                 <span>+0 00 0000 00</span>
               </Link>
-              <Link href="#">
+              <Link href="mailto:info@brandedify.com">
                 <img src="/images/mail.svg" />
-                <span>brandedify@gmail.com</span>
+                <span>info@brandedify.com</span>
               </Link>
             </div>
             <div className="right">

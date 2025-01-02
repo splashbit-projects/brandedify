@@ -89,9 +89,9 @@ const Footer = () => {
                 <img src="/images/foot_phone.svg" />
                 <span>+0 00 0000 00</span>
               </Link>
-              <Link href="#">
+              <Link href="mailto:info@brandedify.com">
                 <img src="/images/foot_mail.svg" />
-                <span>brandedify@gmail.com</span>
+                <span>info@brandedify.com</span>
               </Link>
             </div>
             <div className="right">
