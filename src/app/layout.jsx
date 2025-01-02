@@ -40,7 +40,7 @@ export const metadata = {
     title: "Brandedify | Innovative Digital Marketing Solutions for Your Brand",
     description:
       "Transform your business with Brandedify's cutting-edge digital marketing strategies tailored to amplify growth, engagement, and success.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata = {
     title: "Brandedify FAQ | Your Questions Answered",
     description:
       "Get answers to common questions about Brandedify's services, approach, and strategies. Explore how we can help your business grow.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

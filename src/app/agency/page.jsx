@@ -11,7 +11,7 @@ export const metadata = {
     title: "About Brandedify | Your Trusted Digital Marketing Agency",
     description:
       "Discover Brandedify, a dynamic digital marketing agency specializing in creative strategies, data-driven solutions, and exceptional results for brands of all sizes.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata = {
     title: "Brandedify Pricing | Flexible Digital Marketing Plans",
     description:
       "Find your business's perfect digital marketing plan with Brandedify's transparent and flexible pricing options.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

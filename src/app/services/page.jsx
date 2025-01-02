@@ -13,7 +13,7 @@ export const metadata = {
     title: "Brandedify Services | Comprehensive Digital Marketing Solutions",
     description:
       "Explore Brandedify’s range of services, including SEO, PPC, Social Media Marketing, Content Marketing, Email Marketing, and Marketing Automation.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

@@ -13,7 +13,7 @@ export const metadata = {
     title: "Brandedify Solutions | Tailored Strategies for Business Growth",
     description:
       "Discover how Brandedify’s solutions in Lead Generation, Brand Awareness, Customer Retention, and Sales Enablement help businesses achieve success.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

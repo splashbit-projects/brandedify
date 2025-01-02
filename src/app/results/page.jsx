@@ -15,7 +15,7 @@ export const metadata = {
     title: "Brandedify Results | Case Studies and Success Stories",
     description:
       "See how Brandedify has helped businesses across industries achieve measurable growth through tailored digital marketing strategies.",
-    //images: "",
+    images: "https://brandedify.com/images/meta.png",
   },
 };
 

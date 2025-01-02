@@ -11,7 +11,7 @@ export const metadata = {
       title: "Contact Brandedify | Let's Grow Your Brand",
       description:
         "Contact Brandedify for personalized digital marketing solutions. You can reach us via email, phone, or our contact form.",
-      //images: "",
+      images: "https://brandedify.com/images/meta.png",
     },
   };
   
