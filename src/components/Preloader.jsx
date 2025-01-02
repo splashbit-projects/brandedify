@@ -14,7 +14,7 @@ const Preloader = () => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       setTimeout(() => setIsVisible(false), 200);
-    }, 1000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, [pathname]);
 
@@ -29,7 +29,7 @@ const Preloader = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        backgroundColor: "#020202",
+        backgroundColor: "#ffffff",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

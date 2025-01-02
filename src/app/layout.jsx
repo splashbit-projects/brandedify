@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "@/styles/base.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 const helvetica = localFont({
   src: [
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={satoshi.className}>
+        <Preloader />
         <Header />
         <main>{children}</main>
         <Footer />
