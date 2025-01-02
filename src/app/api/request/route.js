@@ -90,15 +90,45 @@ export async function POST(request) {
         <p><b>Timeline:</b> ${timeline}</p>
         <p><b>Contact Method:</b> ${contactMethod.join(", ")}</p>
         `,
-        attachment
+      attachment
     );
 
     const clientEmailBody = makeBody(
       email, // Client email
       process.env.EMAIL_USER, // Sender (admin)
-      "Brandedify: We've Received Your Request", // Subject
+      "We've Received Your Request", // Subject
       `
-      
+      <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
+        <thead>
+          <tr>
+              <td>
+                  <img style="width: 100%" src="https://brandedify.com/images/email_header.png" alt="Header" />
+              </td>
+          </tr>
+        </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
+                        <h2 style="text-align: left; font-size: 20px;">Dear ${fullName},</h2>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to Brandedify. We’re thrilled to connect and explore how we can support your business's growth and success.</p>
+                        <p style="font-size: 16px; line-height: 19px;">Your request has been received, and our team is reviewing the details. A dedicated consultant will contact you shortly to better understand your needs and discuss how our digital marketing solutions can drive impactful results for your business.</p>
+                        <p style="font-size: 16px; line-height: 19px;">For any immediate questions or additional details, you're welcome to contact us directly at info@brandedify.com.</p>
+                        <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
+                            Best regards,
+                            <br>
+                           The Brandedify Team
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="background-color: #030A1D; font-weight: 600; font-family: Roboto, sans-serif;padding: 24px 0;">
+                        <p style="font-size: 20px; line-height: 24px; color: #ffffff; text-align: center;margin: 0;">Thanks for using <a href="https://brandedify.com/" style="color: #ffffff; text-decoration: none;">Brandedify</a></p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
       `
     );
 
