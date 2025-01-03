@@ -112,6 +112,20 @@ export async function POST(request) {
                         <h2 style="text-align: left; font-size: 20px;">Dear ${fullName},</h2>
                         <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to Brandedify. We’re thrilled to connect and explore how we can support your business's growth and success.</p>
                         <p style="font-size: 16px; line-height: 19px;">Your request has been received, and our team is reviewing the details. A dedicated consultant will contact you shortly to better understand your needs and discuss how our digital marketing solutions can drive impactful results for your business.</p>
+                         <ul style="padding-left: 20px;">
+                          <li style="font-size: 16px; line-height: 19px;">
+                              <b style="color:#7373FF;font-weight: 600;">Review:</b> We'll analyze the information you provided to create a personalized strategy
+                              tailored to your goals.
+                          </li>
+                          <li style="font-size: 16px; line-height: 19px;">
+                              <b style="color:#7373FF;font-weight: 600;">Contact:</b> A team member will get in touch within 24 hours to outline the next steps and
+                              schedule a follow-up discussion.
+                          </li>
+                          <li style="font-size: 16px; line-height: 19px;">
+                              <b style="color:#7373FF;font-weight: 600;">Consultation:</b> We'll dive deeper into your objectives and present actionable strategies to
+                              achieve measurable outcomes.
+                          </li>
+                      </ul>
                         <p style="font-size: 16px; line-height: 19px;">For any immediate questions or additional details, you're welcome to contact us directly at info@brandedify.com.</p>
                         <p style="font-size: 16px; line-height: 19px; font-weight: 600;">
                             Best regards,
@@ -123,9 +137,9 @@ export async function POST(request) {
             </tbody>
             <tfoot>
                 <tr>
-                    <td style="background-color: #030A1D; font-weight: 600; font-family: Roboto, sans-serif;padding: 24px 0;">
-                        <p style="font-size: 20px; line-height: 24px; color: #ffffff; text-align: center;margin: 0;">Thanks for using <a href="https://brandedify.com/" style="color: #ffffff; text-decoration: none;">Brandedify</a></p>
-                    </td>
+                    <td>
+                      <img style="width: 100%" src="https://brandedify.com/images/email_header.png" alt="Header" />
+                  </td>
                 </tr>
             </tfoot>
         </table>

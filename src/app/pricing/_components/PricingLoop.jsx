@@ -36,7 +36,7 @@ const PricingLoop = ({ pricingArray }) => {
               Download our comprehensive price list for detailed insights <br />
               into what we offer and how we can help your business grow.
             </p>
-            <Link href="#">
+            <Link href="/price_list.pdf">
               <span>Download Full Price List</span>
               <img src="/images/pricing/download.svg" />
             </Link>
