@@ -215,7 +215,7 @@
     .swiper {
       display: flex;
       width: 100%;
-      .swiper-wrapper{
+      .swiper-wrapper {
         //transition-duration: 0ms !important;
         transition-timing-function: linear;
       }
@@ -235,11 +235,11 @@
         background: #f8f8f8;
         border-radius: rem(12);
         img {
-            @media (max-width: rem(992)) {
-              width: rem(20);
-              height: rem(20);
-            }
+          @media (max-width: rem(992)) {
+            width: rem(20);
+            height: rem(20);
           }
+        }
       }
     }
   }
@@ -260,17 +260,19 @@
 }
 
 .home-advantages {
+  overflow: hidden;
   margin: rem(120) 0;
   @media (max-width: rem(992)) {
     margin: rem(86) 0;
   }
   .swiper {
     width: 100%;
-    //overflow: unset;
+    overflow: unset;
     .swiper-wrapper {
       width: 100%;
       //overflow: unset;
       .swiper-slide {
+        transition-duration: 1.2s !important;
         width: 100%;
         border-radius: rem(20);
         padding: 1px;
@@ -286,8 +288,36 @@
           );
         overflow: unset;
         height: auto;
+        &.swiper-slide-next {
+          opacity: 1 !important;
+          background: transparent;
+          .slide-inner,
+          .slide-last {
+            transform: rotate(-2deg);
+            border: 1px solid rgba(115, 115, 255, 0.4);
+            @media (max-width: rem(992)) {
+              transform: rotate(0);
+              border: none;
+            }
+          }
+        }
+        &.swiper-slide-prev {
+          opacity: 1 !important;
+          background: transparent;
+          .slide-inner,
+          .slide-last {
+            transform: rotate(-2deg);
+            border: 1px solid rgba(115, 115, 255, 0.4);
+            @media (max-width: rem(992)) {
+              transform: rotate(0);
+              border: none;
+            }
+          }
+        }
         &.swiper-slide-active {
-          .slide-inner {
+          z-index: 1;
+          .slide-inner,
+          .slide-last {
             transform: rotate(0);
           }
         }
@@ -301,7 +331,7 @@
           gap: rem(112);
           height: auto;
           //transform: rotate(-2deg);
-          transition: all 0.5s;
+          transition: all 1s;
           height: 100%;
           @media (max-width: rem(992)) {
             flex-direction: column;
@@ -349,6 +379,7 @@
           }
         }
         .slide-last {
+          transition: all 1s;
           height: 100%;
           background-image: url(/images/home/slide3.svg);
           background-size: cover;

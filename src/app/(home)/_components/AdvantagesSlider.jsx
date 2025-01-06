@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import 'swiper/css/effect-fade';
 import Link from "next/link";
 
 const AdvantagesSlider = () => {
@@ -14,11 +15,12 @@ const AdvantagesSlider = () => {
       spaceBetween={36}
       slidesPerView={1}
       autoplay={{
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
-      modules={[Autoplay]}
-      //effect="fade"
+      modules={[Autoplay, EffectFade]}
+      effect="fade"
+      fadeEffect={true}
     >
       <SwiperSlide>
         <div className="slide-inner">
