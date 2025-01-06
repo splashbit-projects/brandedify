@@ -35,13 +35,13 @@ body {
   min-width: $minWidth;
   scroll-behavior: smooth;
   @media (min-width: rem(1400)) {
-    zoom: 1;
+    zoom: 1.05;
     ._container {
       //max-width: calc(100% - rem(80));
     }
   }
   @media (min-width: rem(1500)) {
-    zoom: 1;
+    zoom: 1.08;
   }
   @media (min-width: rem(1600)) {
     zoom: 1.12;
