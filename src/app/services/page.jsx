@@ -26,7 +26,7 @@ const Services = () => {
         title={"Find the Right Plan for Your Business"}
         text="Our services are designed to fit businesses of all sizes, from startups to enterprises. Explore <br>our flexible pricing options and find the perfect package tailored to your goals."
         buttonText={"View Pricing Plans"}
-        link="#"
+        link="/pricing"
       />
     </>
   );
