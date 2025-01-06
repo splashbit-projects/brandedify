@@ -44,6 +44,10 @@
     overflow-x: auto;
     justify-content: center;
     margin-bottom: rem(64);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    scroll-behavior: smooth;
     @media (max-width: rem(992)) {
       margin-bottom: rem(48);
     }

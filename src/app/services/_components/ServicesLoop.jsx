@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -8,21 +8,85 @@ import ComparisonTable from "./ComparisonTable";
 
 const ServicesLoop = ({ serviceArray }) => {
   const [anchor, setAnchor] = useState(serviceArray[0].id);
+  const observerRefs = useRef([]);
+  const containerRef = useRef(null);
+
   const handleAnchor = (value) => {
     setAnchor(value);
     document.getElementById(value)?.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Adjust this threshold based on when you want the link to activate
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setAnchor(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    observerRefs.current = serviceArray.map(({ id }) =>
+      document.getElementById(id)
+    );
+    observerRefs.current.push(
+      document.getElementById("comparison"),
+      document.getElementById("key-takeaways")
+    );
+
+    observerRefs.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      observerRefs.current.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, [serviceArray]);
+
+  useEffect(() => {
+    setTimeout(function () {
+      const container = containerRef.current;
+      const activeElement = document.querySelector(
+        ".services-loop__top .active"
+      );
+
+      if (container && activeElement) {
+        console.log("test");
+        const activeOffsetLeft = activeElement.offsetLeft;
+
+        const scrollPosition =
+          activeOffsetLeft;
+
+        container.scrollLeft = scrollPosition;
+      }
+    }, 1000);
+  }, [anchor]);
+
   return (
     <>
       <section className="services-loop">
         <div className="_container">
-          <div className="services-loop__top">
+          <div className="services-loop__top" ref={containerRef}>
             {serviceArray.map((service, index) => (
               <Link
                 href={`#`}
                 key={index}
-                onClick={() => handleAnchor(service.id)}
+                onClick={(event) => {
+                  event.preventDefault(); // Prevent the default link behavior
+                  handleAnchor(service.id); // Call your anchor handling logic
+                }}
                 className={`${anchor == service.id ? "active" : ""}`}
               >
                 {service.title}
@@ -30,14 +94,20 @@ const ServicesLoop = ({ serviceArray }) => {
             ))}
             <Link
               href={`#`}
-              onClick={() => handleAnchor("comparison")}
+              onClick={(event) => {
+                event.preventDefault(); // Prevent the default link behavior
+                handleAnchor("comparison"); // Call your anchor handling logic
+              }}
               className={`${anchor == "comparison" ? "active" : ""}`}
             >
               Solutions for Your Goals
             </Link>
             <Link
               href={`#`}
-              onClick={() => handleAnchor("key-takeaways")}
+              onClick={(event) => {
+                event.preventDefault(); // Prevent the default link behavior
+                handleAnchor("key-takeaways"); // Call your anchor handling logic
+              }}
               className={`${anchor == "key-takeaways" ? "active" : ""}`}
             >
               Key Takeaways
@@ -229,7 +299,9 @@ const ServicesLoop = ({ serviceArray }) => {
                 viewport={{ once: true }}
                 variants={fadeInUp}
               >
-                <Link href="/request-form">Let’s Match Services to Your Goals</Link>
+                <Link href="/request-form">
+                  Let’s Match Services to Your Goals
+                </Link>
               </motion.div>
             </div>
           </div>
