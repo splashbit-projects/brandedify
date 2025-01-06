@@ -41,16 +41,19 @@ body {
     }
   }
   @media (min-width: rem(1500)) {
-    zoom: 1.05;
+    zoom: 1.08;
   }
   @media (min-width: rem(1600)) {
-    zoom: 1.1;
+    zoom: 1.12;
   }
-  @media (min-width: rem(1800)) {
+  @media (min-width: rem(1700)) {
     zoom: 1.15;
   }
-  @media (min-width: rem(2000)) {
+  @media (min-width: rem(1800)) {
     zoom: 1.2;
+  }
+  @media (min-width: rem(2000)) {
+    zoom: 1.25;
   }
 }
 body {
