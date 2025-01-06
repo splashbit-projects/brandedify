@@ -141,7 +141,7 @@ const HomeStories = () => {
             variants={fadeInUp}
             className="buttons"
           >
-            <Link href="#">
+            <Link href="/results">
               <span>How We Deliver Results</span>
               <img src="/images/arrow-purple.svg" />
             </Link>
