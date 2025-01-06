@@ -25,7 +25,8 @@
       position: sticky;
       top: rem(10);
       @media (max-width: rem(992)) {
-        position: relative;
+        position: sticky;
+        top: rem(0);
         width: calc(100% + rem(32));
         margin-left: -1rem;
         display: flex;
@@ -33,6 +34,7 @@
         align-items: center;
         overflow-x: auto;
         border-radius: 0;
+        z-index: 99;
       }
       a {
         display: flex;
