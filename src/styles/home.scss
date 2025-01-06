@@ -498,6 +498,11 @@
       &.active {
         opacity: 1;
         transform: translateY(-50%) scale(1);
+        @media (max-width: rem(992)) {
+          position: relative;
+          top:unset;
+          transform: translate(0) scale(1);
+         }
       }
       .col-01 {
         width: 45%;
