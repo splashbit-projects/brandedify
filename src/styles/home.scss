@@ -265,6 +265,22 @@
   @media (max-width: rem(992)) {
     margin: rem(86) 0;
   }
+  .dots {
+    margin-top: rem(50);
+    display: flex;
+    justify-content: center;
+    gap:rem(10);
+    .swiper-pagination-bullet{
+      width: rem(10);
+      height: rem(10);
+      margin: 0;
+      background: #f1f1f1;
+      opacity: 1;
+      &.swiper-pagination-bullet-active{
+        background: #DFDFDF;
+      }
+    }
+  }
   .swiper {
     width: 100%;
     overflow: unset;
@@ -435,20 +451,51 @@
   @media (max-width: rem(992)) {
     margin: rem(86) 0;
   }
+  ._container {
+    position: relative;
+    height: 400vh;
+    @media (max-width: rem(992)) {
+      height: auto;
+    }
+  }
   &__body {
     display: flex;
     flex-direction: column;
     gap: rem(68);
+    height: 100dvh;
+    position: sticky;
+    top: 0;
     @media (max-width: rem(992)) {
       gap: rem(38);
+      height: auto;
     }
     .row {
       display: flex;
       align-items: center;
       gap: rem(75);
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      top:50%;
+      transform: translateY(-50%);
       @media (max-width: rem(992)) {
         flex-direction: column;
         gap: rem(16);
+        opacity: 1;
+        position: relative;
+        top:unset;
+        transform: translate(0);
+      }
+      &:first-child {
+       
+       @media (max-width: rem(992)) {
+        position: relative;
+        top:unset;
+        transform: translate(0);
+       }
+      }
+      &.active {
+        opacity: 1;
       }
       .col-01 {
         width: 45%;
