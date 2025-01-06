@@ -34,6 +34,24 @@ body {
   height: 100%;
   min-width: $minWidth;
   scroll-behavior: smooth;
+  @media (min-width: rem(1400)) {
+    zoom: 1.05;
+    ._container {
+      //max-width: calc(100% - rem(80));
+    }
+  }
+  @media (min-width: rem(1500)) {
+    zoom: 1.1;
+  }
+  @media (min-width: rem(1600)) {
+    zoom: 1.15;
+  }
+  @media (min-width: rem(1800)) {
+    zoom: 1.2;
+  }
+  @media (min-width: rem(2000)) {
+    zoom: 1.25;
+  }
 }
 body {
   line-height: 1;
@@ -349,7 +367,7 @@ body {
   opacity: 0;
   pointer-events: none;
 
-  background: #0000004D;
+  background: #0000004d;
   backdrop-filter: blur(15px);
   &.opened {
     opacity: 1;
@@ -423,7 +441,7 @@ body {
       }
       p {
         margin: 0;
-        color: #030A1DE5;
+        color: #030a1de5;
         font-size: rem(16);
         font-weight: 400;
         line-height: 18.23px;
