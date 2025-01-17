@@ -117,7 +117,7 @@ Cookies are integral to the smooth operation of our website. They:
 
 1.  If you have questions or concerns about this Cookie Policy or how we use cookies, please get in touch with us via:
 
-- **Phone Number:** PHONE NUMBER
+- **Phone Number:** [+6531060141](tel:+6531060141)
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 

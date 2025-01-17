@@ -54,7 +54,7 @@ While our policy generally does not allow refunds, certain exceptional cases may
 
 1.  If you have questions about this policy or need assistance, please reach out to us:
 
-- **Phone Number:** PHONE NUMBER
+- **Phone Number:** [+6531060141](tel:+6531060141)
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 

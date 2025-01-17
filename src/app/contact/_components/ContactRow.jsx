@@ -30,7 +30,7 @@ const ContactRow = () => {
               </div>
               <div>
                 <h3>Speak with Us</h3>
-                <Link href="#">NUMBER</Link>
+                <Link href="tel:+6531060141">+6531060141</Link>
               </div>
             </div>
           </motion.div>

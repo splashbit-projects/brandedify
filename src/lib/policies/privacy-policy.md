@@ -138,7 +138,7 @@ We respond to GDPR-related requests within 30 days.
 
 1.  For inquiries regarding this Privacy Policy, reach us via:
 
-- **Phone Number:** PHONE NUMBER
+- **Phone Number:** [+6531060141](tel:+6531060141)
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 

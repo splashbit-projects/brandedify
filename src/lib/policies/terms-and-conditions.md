@@ -160,7 +160,7 @@ Brandedify is not liable for damages or losses arising from:
 
 1.  For any questions, concerns, or clarifications regarding these Terms and Conditions, please reach out to us through one of the following channels:
 
-- **Phone Number:** PHONE NUMBER
+- **Phone Number:** [+6531060141](tel:+6531060141)
 - **Email:** [info@brandedify.com](mailto:info@brandedify.com)
 - **Website Contact Form:** [https://brandedify.com/contact](https://brandedify.com/contact)
 
