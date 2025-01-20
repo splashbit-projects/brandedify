@@ -3,7 +3,9 @@ title: "Cookie Policy"
 date: "13 December, 2024"
 ---
 
-This Cookie Policy explains how Brandedify is owned and operated by BRANDORA PTE. LTD uses cookies and similar technologies to enhance your experience on our website. By continuing to use our website, you consent to the use of cookies as outlined in this policy. We encourage you to read this policy thoroughly to understand how we manage, collect, and utilize cookies.
+This Cookie Policy explains how Brandedify is owned and operated by Brandora PTE. LTD, a company registered at 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413, with registration number 202449312C, and Veltrix Global LTD, registered at Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB, with registration number 16114936.
+
+Brandedify uses cookies and similar technologies to enhance your experience on our website. By continuing to use our website, you consent to the use of cookies as outlined in this policy. We encourage you to read this policy thoroughly to understand how we manage, collect, and utilize cookies.
 
 ## What Are Cookies?
 

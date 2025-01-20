@@ -14,11 +14,16 @@ At Brandedify, accessible at [https://brandedify.com](https://brandedify.com/), 
 
 ## Who Handles Your Data
 
-1.  Brandedify operates under the management of BRANDORA PTE. LTD, which oversees data processing activities.
+1.  Brandedify operates under the management of Brandora PTE. LTD, a company registered at 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413, with registration number 202449312C, and Veltrix Global LTD, registered at Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB, with registration number 16114936, which oversee data processing activities.
 
-- **Data Processor:** BRANDORA PTE. LTD
+- **Data Processor 1:** Brandora PTE. LTD
 - **Registered Address:** 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413.
 - **Registration number:** 202449312C
+
+- **Data Processor 2:** Veltrix Global LTD
+- **Registered Address:** Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB
+- **Registration number:** 16114936
+
 - **Contact Information:**
 
 * **Email:** [info@brandedify.com](mailto:info@brandedify.com)
@@ -26,7 +31,7 @@ At Brandedify, accessible at [https://brandedify.com](https://brandedify.com/), 
 
 ## Our Duties in Managing Your Data
 
-As the data processor, BRANDORA PTE. LTD ensures:
+As the data processor, Brandedify ensures:
 
 1.  **Data Collection and Processing:** Personal data is handled in compliance with privacy regulations and Brandedify’s instructions.
 2.  **Data Security:** Robust measures are in place to protect data from unauthorized access or misuse.
