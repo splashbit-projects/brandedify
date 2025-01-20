@@ -113,7 +113,7 @@ const Footer = () => {
       <div className="foot-copy">
         <div className="_container">
           <div className="row">
-            <p>© {currentYear} Brandedify. All Rights Reserved</p>
+            <p>© {currentYear} Brandora PTE. LTD. Veltrix Global LTD.  All Rights Reserved</p>
             <nav>
               <Link href="/terms-and-conditions">Terms and Conditions</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
