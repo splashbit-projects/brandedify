@@ -81,6 +81,10 @@ footer {
             @media (max-width: rem(992)) {
               font-size: rem(14);
             }
+            span{
+              display: block;
+              margin-top: rem(8);
+            }
           }
         }
       }

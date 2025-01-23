@@ -18,11 +18,13 @@ const ContactRow = () => {
             <div className="inner">
               <div>
                 <h3>Where We Work</h3>
-                <Link href="#">1 Paya Lebar Link, Singapore 408533</Link>
+                <Link href="#">Office number 128, located on the 6th floor at 1 Paya Lebar Link, Singapore 408533</Link>
+                <Link href="#">10B Printing House Yard, Hackney Road, Shoreditch, London E2 (2nd Floor, Office 26)</Link>
               </div>
               <div>
                 <h3>Official Correspondence</h3>
                 <Link href="#">133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413</Link>
+                <Link href="#">Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB</Link>
               </div>
               <div>
                 <h3>Get in Touch</h3>
