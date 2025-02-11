@@ -18,17 +18,54 @@ const ContactRow = () => {
             <div className="inner">
               <div>
                 <h3>Where We Work</h3>
-                <Link href="#">Office number 128, located on the 6th floor at 1 Paya Lebar Link, Singapore 408533</Link>
-                <Link href="#">10B Printing House Yard, Hackney Road, Shoreditch, London E2 (2nd Floor, Office 26)</Link>
-              </div>
-              <div>
-                <h3>Official Correspondence</h3>
-                <Link href="#">133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413</Link>
-                <Link href="#">Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB</Link>
+                <div className="companies">
+                  <div className="company">
+                    <div className="company__name">
+                      <h4>Brandora PTE LTD</h4>
+                      <span>Asia</span>
+                    </div>
+                    <div className="company__address">
+                      <h5>Office address:</h5>
+                      <p>
+                        Office number 128, 6th floor, 1 Paya Lebar Link,
+                        Singapore 408533
+                      </p>
+                    </div>
+                    <div className="company__address">
+                      <h5>Registered address:</h5>
+                      <p>
+                        133 New Bridge Road, #08-01, Chinatown Point, Singapore
+                        059413
+                      </p>
+                    </div>
+                  </div>
+                  <div className="company">
+                    <div className="company__name">
+                      <h4>Veltrix Global LTD</h4>
+                      <span>UK and Europe</span>
+                    </div>
+                    <div className="company__address">
+                      <h5>Office address:</h5>
+                      <p>
+                        10B Printing House Yard, Hackney Road, Shoreditch,
+                        London E2 (2nd Floor, Office 26)
+                      </p>
+                    </div>
+                    <div className="company__address">
+                      <h5>Registered address:</h5>
+                      <p>
+                        Silverstream House, Fitzroy Street, Fitzrovia, London,
+                        United Kingdom, W1T 6EB
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div>
                 <h3>Get in Touch</h3>
-                <Link href=":mailto:info@brandedify.com">info@brandedify.com</Link>
+                <Link href=":mailto:info@brandedify.com">
+                  info@brandedify.com
+                </Link>
               </div>
               <div>
                 <h3>Speak with Us</h3>

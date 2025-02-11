@@ -64,20 +64,48 @@ const Footer = () => {
                 <Link href="/solutions#sales-enablement">Sales Enablement</Link>
               </nav>
             </div>
-            <div className="col">
-              <h3>Get in Touch</h3>
-              <nav>
-                <Link href="#">
-                  Office address:
-                  <span>Office number 128, located on the 6th floor at 1 Paya Lebar Link, Singapore 408533</span>
-                  <span>10B Printing House Yard, Hackney Road, Shoreditch, London E2 (2nd Floor, Office 26)</span>
-                </Link>
-                <Link href="#">
-                  Registered address:
-                  <span>133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413</span>
-                  <span>Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB</span>
-                </Link>
-              </nav>
+          </div>
+        </div>
+      </div>
+      <div className="companies">
+        <div className="_container">
+          <div className="company">
+            <div className="company__name">
+              <h4>Brandora PTE LTD</h4>
+              <span>Services in Asia</span>
+            </div>
+            <div className="company__address">
+              <h5>Office address:</h5>
+              <p>
+                Office number 128, 6th floor, 1 Paya Lebar Link, Singapore
+                408533
+              </p>
+            </div>
+            <div className="company__address">
+              <h5>Registered address:</h5>
+              <p>
+                133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413
+              </p>
+            </div>
+          </div>
+          <div className="company">
+            <div className="company__name">
+              <h4>Veltrix Global LTD</h4>
+              <span>Services in the UK and Europe</span>
+            </div>
+            <div className="company__address">
+              <h5>Office address:</h5>
+              <p>
+                10B Printing House Yard, Hackney Road, Shoreditch, London E2
+                (2nd Floor, Office 26)
+              </p>
+            </div>
+            <div className="company__address">
+              <h5>Registered address:</h5>
+              <p>
+                Silverstream House, Fitzroy Street, Fitzrovia, London, United
+                Kingdom, W1T 6EB
+              </p>
             </div>
           </div>
         </div>
@@ -114,7 +142,10 @@ const Footer = () => {
       <div className="foot-copy">
         <div className="_container">
           <div className="row">
-            <p>© {currentYear} Brandora PTE. LTD. Veltrix Global LTD.  All Rights Reserved</p>
+            <p>
+              © {currentYear} Brandora PTE. LTD. Veltrix Global LTD. All Rights
+              Reserved
+            </p>
             <nav>
               <Link href="/terms-and-conditions">Terms and Conditions</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>

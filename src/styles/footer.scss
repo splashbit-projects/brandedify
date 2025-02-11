@@ -18,20 +18,14 @@ footer {
         row-gap: rem(48);
       }
       .col {
-        width: 20%;
+        width: calc((50% / 3) - rem(20));
         @media (max-width: rem(992)) {
           width: calc(50% - rem(10));
         }
         &:first-child {
-          min-width: rem(246);
+          width: 50%;
           @media (max-width: rem(992)) {
             width: 100%;
-          }
-        }
-        &:last-child {
-          width: 30%;
-          @media (max-width: rem(992)) {
-            width: calc(50% - rem(10));
           }
         }
         > div {
@@ -81,7 +75,7 @@ footer {
             @media (max-width: rem(992)) {
               font-size: rem(14);
             }
-            span{
+            span {
               display: block;
               margin-top: rem(8);
             }
@@ -90,8 +84,75 @@ footer {
       }
     }
   }
+
+  .companies {
+    padding-top: rem(30);
+    ._container {
+      display: flex;
+      gap: rem(20);
+      @media (max-width: rem(992)) {
+        flex-direction: column;
+      }
+      .company {
+        width: calc(50% - rem(10));
+        border-radius: rem(20);
+        background: #f8f8f8;
+        padding: rem(20);
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+        @media (max-width: rem(992)) {
+          width: 100%;
+        }
+        &__name {
+          display: flex;
+          align-items: center;
+          gap: rem(10);
+          @media (max-width: rem(992)) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: rem(10);
+          }
+          h4 {
+            font-weight: 700;
+            font-family: var(--font-helvetica-light);
+            font-size: rem(16);
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: left;
+            color: #485169;
+            margin: 0;
+          }
+          span {
+            display: block;
+            color: #6f6ff9;
+            font-family: var(--font-helvetica-light);
+            font-size: rem(16);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 12px;
+            background: rgba(111, 111, 249, 0.3);
+            padding: rem(6) rem(12);
+          }
+        }
+        &__address {
+          h5 {
+            color: #485169;
+            font-weight: 400;
+            margin-bottom: rem(4);
+          }
+          p {
+            color: #485169;
+            opacity: 0.65;
+          }
+        }
+      }
+    }
+  }
+
   .soc {
-    padding: rem(30) 0 rem(12) 0;
+    padding: rem(16) 0 rem(12) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
