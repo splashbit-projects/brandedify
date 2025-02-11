@@ -46,6 +46,8 @@ export const metadata = {
   },
 };
 
+console.log(helvetica.variable); 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

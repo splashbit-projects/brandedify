@@ -20,7 +20,7 @@ const SolutionsLoop = ({ solutionsArray }) => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Adjust this threshold based on when you want the link to activate
+      threshold: 0.5, 
     };
 
     const observerCallback = (entries) => {
@@ -82,8 +82,8 @@ const SolutionsLoop = ({ solutionsArray }) => {
               href={`#`}
               key={index}
               onClick={(event) => {
-                event.preventDefault(); // Prevent the default link behavior
-                handleAnchor(solution.id); // Call your anchor handling logic
+                event.preventDefault(); 
+                handleAnchor(solution.id); 
               }}
               className={`${solutionAnchor == solution.id ? "active" : ""}`}
             >

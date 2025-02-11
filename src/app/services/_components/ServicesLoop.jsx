@@ -20,7 +20,7 @@ const ServicesLoop = ({ serviceArray }) => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Adjust this threshold based on when you want the link to activate
+      threshold: 0.5, 
     };
 
     const observerCallback = (entries) => {
@@ -84,8 +84,8 @@ const ServicesLoop = ({ serviceArray }) => {
                 href={`#`}
                 key={index}
                 onClick={(event) => {
-                  event.preventDefault(); // Prevent the default link behavior
-                  handleAnchor(service.id); // Call your anchor handling logic
+                  event.preventDefault(); 
+                  handleAnchor(service.id); 
                 }}
                 className={`${anchor == service.id ? "active" : ""}`}
               >
@@ -95,8 +95,8 @@ const ServicesLoop = ({ serviceArray }) => {
             <Link
               href={`#`}
               onClick={(event) => {
-                event.preventDefault(); // Prevent the default link behavior
-                handleAnchor("comparison"); // Call your anchor handling logic
+                event.preventDefault(); 
+                handleAnchor("comparison"); 
               }}
               className={`${anchor == "comparison" ? "active" : ""}`}
             >
@@ -105,8 +105,8 @@ const ServicesLoop = ({ serviceArray }) => {
             <Link
               href={`#`}
               onClick={(event) => {
-                event.preventDefault(); // Prevent the default link behavior
-                handleAnchor("key-takeaways"); // Call your anchor handling logic
+                event.preventDefault(); 
+                handleAnchor("key-takeaways");
               }}
               className={`${anchor == "key-takeaways" ? "active" : ""}`}
             >

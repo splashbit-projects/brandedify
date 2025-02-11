@@ -41,9 +41,6 @@ const AdvantagesScroll = () => {
     offset: ["start start", "end end"],
   });
 
-  useEffect(() => {
-    //scrollYProgress.on("change", (e) => console.log(scrollYProgress.current));
-  }, []);
 
   return (
     <div ref={container} className="scroll-wrapper">

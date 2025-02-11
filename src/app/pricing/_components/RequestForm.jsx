@@ -117,7 +117,6 @@ const RequestForm = ({ packageValue }) => {
 
   const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
     try {
-      // Prepare the form data
       const formData = {
         fullName: values.fullName,
         email: values.email,
@@ -129,7 +128,6 @@ const RequestForm = ({ packageValue }) => {
         message: values.message,
       };
   
-      // Send the data to the server
       const response = await fetch("/api/pricing", {
         method: "POST",
         headers: {
@@ -142,7 +140,6 @@ const RequestForm = ({ packageValue }) => {
         throw new Error("Failed to submit the form.");
       }
   
-      // Reset the form and show success message
       resetForm();
       setStatus({ success: true });
     } catch (error) {

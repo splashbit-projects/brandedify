@@ -35,7 +35,7 @@ const Preloader = () => {
         alignItems: "center",
         zIndex: 99999,
         opacity: isLoading ? 1 : 0,
-        transition: "opacity 0.5s ease", // Smoothly transition the opacity
+        transition: "opacity 0.5s ease", 
         visibility: isVisible ? "visible" : "hidden",
       }}
     >

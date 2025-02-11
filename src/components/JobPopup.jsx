@@ -19,8 +19,6 @@ function JobPopup() {
       .required("This field is required."),
     phone: Yup.string().required("This field is required."),
     position: Yup.string().required("This field is required."),
-    //resume: Yup.mixed(),
-    //portfolio: Yup.mixed(),
     resume: Yup.mixed()
       .required("A file is required!")
       .test(
@@ -81,12 +79,11 @@ function JobPopup() {
     { setSubmitting, resetForm, setStatus }
   ) => {
     try {
-      // Prepare form data with Base64 file attachments
       const prepareFile = async (file) => {
         if (!file) return null;
         const data = await new Promise((resolve, reject) => {
           const reader = new FileReader();
-          reader.onload = () => resolve(reader.result.split(",")[1]); // Exclude data prefix
+          reader.onload = () => resolve(reader.result.split(",")[1]); 
           reader.onerror = (error) => reject(error);
           reader.readAsDataURL(file);
         });
@@ -106,7 +103,6 @@ function JobPopup() {
         comments: values.comments,
       };
 
-      // Send form data to the server
       const response = await fetch("/api/job", {
         method: "POST",
         headers: {
@@ -119,7 +115,6 @@ function JobPopup() {
         throw new Error("Failed to submit application.");
       }
 
-      // Reset form and show success message
       resetForm();
       setStatus({ success: true });
     } catch (error) {
@@ -180,7 +175,6 @@ function JobPopup() {
                         below to submit your application!
                       </p>
                       <Form>
-                        {/* Full Name Field */}
                         <div className="input-wrap">
                           <label>Full name</label>
                           <Field
@@ -200,7 +194,6 @@ function JobPopup() {
                           />
                         </div>
 
-                        {/* Email Field */}
                         <div className="input-wrap">
                           <label>Email</label>
                           <Field
@@ -218,7 +211,6 @@ function JobPopup() {
                           />
                         </div>
 
-                        {/* Phone Number Field */}
                         <div className="input-wrap">
                           <label>Phone number</label>
                           <PhoneInput
@@ -237,7 +229,6 @@ function JobPopup() {
                           />
                         </div>
 
-                        {/* Position Field */}
                         <div className="input-wrap">
                           <label>Desired position</label>
                           <Field
@@ -259,7 +250,6 @@ function JobPopup() {
                           />
                         </div>
 
-                        {/* Resume Upload */}
                         <div className="file-wrap">
                           <label>Upload Resume</label>
                           <div
@@ -295,7 +285,6 @@ function JobPopup() {
                           </div>
                         </div>
 
-                        {/* Portfolio Upload */}
                         <div className="file-wrap">
                           <label>Upload Portfolio (if applicable)</label>
                           <div
@@ -331,7 +320,6 @@ function JobPopup() {
                           </div>
                         </div>
 
-                        {/* Comments Field */}
                         <div className="input-wrap full">
                           <label>Additional comments/questions</label>
                           <Field
@@ -350,8 +338,6 @@ function JobPopup() {
                             className="error"
                           />
                         </div>
-
-                        {/* Submit Button */}
                         <button type="submit" disabled={isSubmitting}>
                           Send
                         </button>

@@ -15,7 +15,6 @@ function makeBody(to, from, subject, message, attachments = []) {
     message,
   ].join("\n");
 
-  // Add attachments
   attachments.forEach(({ filename, mimeType, data }) => {
     email += `
 --boundary

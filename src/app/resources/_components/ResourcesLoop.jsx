@@ -29,7 +29,7 @@ const ResourcesLoop = ({ posts }) => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Adjust this threshold for when to activate the link
+      threshold: 0.5,
     };
 
     const observerCallback = (entries) => {
@@ -87,8 +87,8 @@ const ResourcesLoop = ({ posts }) => {
           <Link
             href={`#`}
             onClick={(event) => {
-              event.preventDefault(); // Prevent the default link behavior
-              handleAnchor("digital-marketing-trends"); // Call your anchor handling logic
+              event.preventDefault();
+              handleAnchor("digital-marketing-trends");
             }}
             className={`${
               anchor === "digital-marketing-trends" ? "active" : ""
@@ -99,8 +99,8 @@ const ResourcesLoop = ({ posts }) => {
           <Link
             href={`#`}
             onClick={(event) => {
-              event.preventDefault(); // Prevent the default link behavior
-              handleAnchor("practical-marketing-tips"); // Call your anchor handling logic
+              event.preventDefault();
+              handleAnchor("practical-marketing-tips");
             }}
             className={`${
               anchor === "practical-marketing-tips" ? "active" : ""
@@ -111,8 +111,8 @@ const ResourcesLoop = ({ posts }) => {
           <Link
             href={`#`}
             onClick={(event) => {
-              event.preventDefault(); // Prevent the default link behavior
-              handleAnchor("business-growth-strategies"); // Call your anchor handling logic
+              event.preventDefault();
+              handleAnchor("business-growth-strategies");
             }}
             className={`${
               anchor === "business-growth-strategies" ? "active" : ""

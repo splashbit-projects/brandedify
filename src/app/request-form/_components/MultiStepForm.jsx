@@ -14,7 +14,6 @@ const MultiStepForm = () => {
   const countryCode = useCountryCode();
   const { thanksPopupDisplay, setThanksPopupDisplay } = usePopupStore();
 
-  // Initial Values
   const initialValues = {
     fullName: "",
     email: "",
@@ -34,7 +33,6 @@ const MultiStepForm = () => {
     file: null,
   };
 
-  // Validation Schemas
   const stepValidations = [
     Yup.object({
       fullName: Yup.string().required("This field is required!"),
@@ -83,7 +81,6 @@ const MultiStepForm = () => {
     }),
   ];
 
-  // Step Content
   const stepsContent = [
     <>
       <h2>Business Data</h2>
@@ -302,9 +299,8 @@ const MultiStepForm = () => {
                     form.setFieldValue("file", file || null);
                   }}
                 />
-                 <ErrorMessage name="file" component="div" className="error" />
+                <ErrorMessage name="file" component="div" className="error" />
               </div>
-             
             </>
           )}
         </Field>
@@ -337,7 +333,7 @@ const MultiStepForm = () => {
           if (!file) return null;
           const data = await new Promise((resolve, reject) => {
             const reader = new FileReader();
-            reader.onload = () => resolve(reader.result.split(",")[1]); // Exclude data prefix
+            reader.onload = () => resolve(reader.result.split(",")[1]);
             reader.onerror = (error) => reject(error);
             reader.readAsDataURL(file);
           });
@@ -362,10 +358,9 @@ const MultiStepForm = () => {
           interests: values.interests,
           timeline: values.timeline,
           contactMethod: values.contactMethod,
-          file
+          file,
         };
-  
-        // Send the request to the backend
+
         const response = await fetch("/api/request", {
           method: "POST",
           headers: {
@@ -373,12 +368,11 @@ const MultiStepForm = () => {
           },
           body: JSON.stringify(formData),
         });
-  
+
         if (!response.ok) {
           throw new Error("Failed to send form data.");
         }
-  
-        // Reset form state and show success message
+
         setStep(1);
         resetForm();
         setStatus({ success: true });
@@ -393,8 +387,7 @@ const MultiStepForm = () => {
       setStep(step + 1);
     }
   };
-  
-  // Utility function to convert file to Base64
+
   const convertFileToBase64 = (file) => {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();

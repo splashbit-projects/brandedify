@@ -65,7 +65,7 @@ export async function POST(request) {
       ? {
           mimeType: file.mimeType,
           filename: file.filename,
-          data: file.data, // Base64 encoded file data
+          data: file.data, 
         }
       : null;
 
@@ -94,9 +94,9 @@ export async function POST(request) {
     );
 
     const clientEmailBody = makeBody(
-      email, // Client email
-      process.env.EMAIL_USER, // Sender (admin)
-      "We've Received Your Request", // Subject
+      email, 
+      process.env.EMAIL_USER, 
+      "We've Received Your Request", 
       `
       <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
         <thead>

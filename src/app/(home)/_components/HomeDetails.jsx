@@ -25,7 +25,6 @@ const HomeDetails = () => {
       const scrollY = window.scrollY;
       const wrapperStart = sliderWrapper.offsetTop;
 
-      // Check if .home-details is partially or fully visible
       if (scrollY >= wrapperStart && scrollY < wrapperStart + rows.length * viewportHeight) {
         const activeRowIndex = Math.floor((scrollY - wrapperStart) / viewportHeight);
 
@@ -39,14 +38,11 @@ const HomeDetails = () => {
       }
     };
 
-    // Attach scroll listener
     window.addEventListener("scroll", handleScroll);
 
-    // Run the scroll handler initially to set the active class on page load
     handleScroll();
 
     return () => {
-      // Cleanup listener
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);

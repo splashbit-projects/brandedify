@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const awaitedParams = await params; // Await the params
+  const awaitedParams = await params;
   const { slug, locale } = awaitedParams;
   const post = await getPost(slug, locale);
 
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }) {
 }
 
 const PostInner = async ({ params }) => {
-  const awaitedParams = await params; // Await the params
+  const awaitedParams = await params;
   const { slug, locale } = awaitedParams;
   const post = await getPost(slug, locale);
   const category = post.category.replaceAll("-", " ");
@@ -110,8 +110,7 @@ const PostInner = async ({ params }) => {
           link="/request-form"
         />
       )}
-      {slug ==
-        "5-steps-to-building-a-strong-brand-identity-online" && (
+      {slug == "5-steps-to-building-a-strong-brand-identity-online" && (
         <GetStarted
           title={"Need Help Crafting Your Brand <br>Identity?"}
           text="Let our experts guide you through every step of the process to ensure your brand makes a <br>powerful impact online."

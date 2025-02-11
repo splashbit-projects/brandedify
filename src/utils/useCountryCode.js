@@ -1,9 +1,8 @@
-// lib/useCountryCode.js
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const useCountryCode = () => {
-  const [countryCode, setCountryCode] = useState('us'); // Default to "us"
+  const [countryCode, setCountryCode] = useState('us'); 
 
   useEffect(() => {
     const fetchCountryCode = async () => {

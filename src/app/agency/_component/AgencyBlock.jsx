@@ -9,7 +9,6 @@ import CareersAtBrandedify from "./CareersAtBrandedify";
 const AgencyBlock = () => {
   const [anchor, setAnchor] = useState("about-us");
 
-  // Refs for each section
   const aboutUsRef = useRef(null);
   const ourTeamRef = useRef(null);
   const coreAreasRef = useRef(null);
@@ -23,7 +22,7 @@ const AgencyBlock = () => {
   ];
 
   const handleScroll = () => {
-    let closestSection = "about-us"; // Default section
+    let closestSection = "about-us";
     let minDistance = Infinity;
 
     sections.forEach((section) => {
@@ -41,23 +40,17 @@ const AgencyBlock = () => {
   };
 
   useEffect(() => {
-    // Attach scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Initial check
     handleScroll();
 
-    // Cleanup on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const handleAnchor = (value) => {
-    
-    // Scroll to the section
     document.getElementById(value)?.scrollIntoView({ behavior: "smooth" });
-    //setAnchor(value);
   };
 
   return (
