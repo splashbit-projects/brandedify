@@ -3,6 +3,7 @@ import React from "react";
 import { fadeInUp } from "@/utils/animations";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const ContactRow = () => {
   return (
@@ -92,6 +93,9 @@ const ContactRow = () => {
               </div>
               <div>
                 <Link href="#">Twitter</Link>
+              </div>
+              <div className="image-wrap">
+                <Image src="/images/contact/contact.png" alt="social" fill />
               </div>
             </div>
           </motion.div>
