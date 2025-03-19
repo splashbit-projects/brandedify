@@ -55,9 +55,9 @@ const HomeHero = () => {
             className="bottom"
           >
             <div className="left">
-              <Link href="#">
+              <Link href="tel:+6531060141">
                 <img src="/images/phone.svg" />
-                <span>+0 00 0000 00</span>
+                <span>+6531060141</span>
               </Link>
               <Link href="mailto:info@brandedify.com">
                 <img src="/images/mail.svg" />
