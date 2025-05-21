@@ -7,6 +7,7 @@ import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 import useCountryCode from "@/utils/useCountryCode";
 import usePopupStore from "@/stores/popupStore";
+import { excludedCountries } from "@/lib/excludedCountries";
 
 const MultiStepForm = () => {
   const { step, setStep } = useRequestFormStore();
@@ -108,6 +109,7 @@ const MultiStepForm = () => {
                 value={field.value}
                 onChange={(value) => form.setFieldValue("phone", value)}
                 placeholder="Enter your phone number"
+                excludeCountries={excludedCountries}
               />
             )}
           </Field>

@@ -6,6 +6,7 @@ import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 import useCountryCode from "@/utils/useCountryCode";
 import Select from "react-select";
+import { excludedCountries } from "@/lib/excludedCountries";
 
 const RequestForm = ({ packageValue }) => {
   const countryCode = typeof window !== "undefined" ? useCountryCode() : "us";
@@ -226,6 +227,7 @@ const RequestForm = ({ packageValue }) => {
                         value={field.value}
                         onChange={(value) => form.setFieldValue("phone", value)}
                         placeholder="Enter your phone number"
+                        excludeCountries={excludedCountries}
                       />
                     )}
                   </Field>
