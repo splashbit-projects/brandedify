@@ -1,23 +1,5 @@
 import { NextResponse } from "next/server";
-const { google } = require("googleapis");
-
-function makeBody(to, from, subject, message) {
-  const str = [
-    `To: ${to}`,
-    `From: ${from}`,
-    `Subject: ${subject}`,
-    `MIME-Version: 1.0`,
-    `Content-Type: text/html; charset=UTF-8`,
-    "",
-    message,
-  ].join("\n");
-
-  return Buffer.from(str)
-    .toString("base64")
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
-}
+const sgMail = require("@sendgrid/mail");
 
 export async function POST(request) {
   try {
@@ -43,37 +25,24 @@ export async function POST(request) {
       file,
     } = bodyJSON;
 
-    const OAuth2 = google.auth.OAuth2;
-    const oauth2Client = new OAuth2(
-      process.env.EMAIL_CLIENT_ID,
-      process.env.EMAIL_CLIENT_SECRET,
-      "https://developers.google.com/oauthplayground"
-    );
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-    oauth2Client.setCredentials({
-      refresh_token: process.env.EMAIL_REFRESH_TOKEN,
-    });
+    const attachments = file
+      ? [
+          {
+            content: file.data,
+            filename: file.filename,
+            type: file.mimeType,
+            disposition: "attachment",
+          },
+        ]
+      : [];
 
-    const accessToken = await oauth2Client.getAccessToken();
-    if (!accessToken.token) {
-      throw new Error("Failed to generate access token.");
-    }
-
-    const gmail = google.gmail({ version: "v1", auth: oauth2Client });
-
-    const attachment = file
-      ? {
-          mimeType: file.mimeType,
-          filename: file.filename,
-          data: file.data, 
-        }
-      : null;
-
-    const adminEmailBody = makeBody(
-      process.env.EMAIL_USER,
-      process.env.EMAIL_USER,
-      `New Request Form Submission`,
-      `
+    const adminEmail = {
+      to: process.env.EMAIL_USER,
+      from: process.env.EMAIL_USER,
+      subject: "New Request Form Submission",
+      html: `
         <p><b>Full Name:</b> ${fullName}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Phone:</b> ${phone}</p>
@@ -89,15 +58,15 @@ export async function POST(request) {
         <p><b>Interests:</b> ${interests}</p>
         <p><b>Timeline:</b> ${timeline}</p>
         <p><b>Contact Method:</b> ${contactMethod.join(", ")}</p>
-        `,
-      attachment
-    );
+      `,
+      attachments,
+    };
 
-    const clientEmailBody = makeBody(
-      email, 
-      process.env.EMAIL_USER, 
-      "We've Received Your Request", 
-      `
+    const clientEmail = {
+      to: email,
+      from: process.env.EMAIL_USER,
+      subject: "We've Received Your Request",
+      html: `
       <table width="640" style="border-collapse: collapse; margin: 0 auto; font-style: sans-serif;">
         <thead>
           <tr>
@@ -110,7 +79,7 @@ export async function POST(request) {
                 <tr>
                     <td style="padding: 50px 40px; font-family: Roboto, sans-serif; color:#0A0A0A;">
                         <h2 style="text-align: left; font-size: 20px;">Dear ${fullName},</h2>
-                        <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to Brandedify. We’re thrilled to connect and explore how we can support your business's growth and success.</p>
+                        <p style="font-size: 16px; line-height: 19px;">Thank you for reaching out to Brandedify. We're thrilled to connect and explore how we can support your business's growth and success.</p>
                         <p style="font-size: 16px; line-height: 19px;">Your request has been received, and our team is reviewing the details. A dedicated consultant will contact you shortly to better understand your needs and discuss how our digital marketing solutions can drive impactful results for your business.</p>
                          <ul style="padding-left: 20px;">
                           <li style="font-size: 16px; line-height: 19px;">
@@ -143,18 +112,11 @@ export async function POST(request) {
                 </tr>
             </tfoot>
         </table>
-      `
-    );
+      `,
+    };
 
-    await gmail.users.messages.send({
-      userId: "me",
-      resource: { raw: adminEmailBody },
-    });
-
-    await gmail.users.messages.send({
-      userId: "me",
-      resource: { raw: clientEmailBody },
-    });
+    await sgMail.send(adminEmail);
+    await sgMail.send(clientEmail);
 
     return NextResponse.json({ message: "Emails sent successfully." });
   } catch (error) {
