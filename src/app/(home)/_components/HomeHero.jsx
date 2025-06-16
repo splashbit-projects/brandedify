@@ -65,13 +65,13 @@ const HomeHero = () => {
               </Link>
             </div>
             <div className="right">
-              <Link href="#">
+              <Link href="https://x.com/brandedify" target="_blank">
                 <img src="/images/x.svg" />
               </Link>
-              <Link href="#">
+              <Link href="https://www.facebook.com/brandedifycom/" target="_blank">
                 <img src="/images/fb.svg" />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/brandedifycom/" target="_blank">
                 <img src="/images/inst.svg" />
                 <span>+3</span>
               </Link>

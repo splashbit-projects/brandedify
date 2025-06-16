@@ -86,13 +86,13 @@ const ContactRow = () => {
                 <p>Stay connected with us for updates, tips, and insights:</p>
               </div>
               <div>
-                <Link href="#">Facebook</Link>
+                <Link href="https://www.facebook.com/brandedifycom/" target="_blank">Facebook</Link>
               </div>
               <div>
-                <Link href="#">Instagram</Link>
+                <Link href="https://www.instagram.com/brandedifycom/" target="_blank">Instagram</Link>
               </div>
               <div>
-                <Link href="#">Twitter</Link>
+                <Link href="https://x.com/brandedify" target="_blank">Twitter</Link>
               </div>
               <div className="image-wrap">
                 <Image src="/images/contact/contact.png" alt="social" fill />
