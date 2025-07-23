@@ -71,6 +71,9 @@ const HomeHero = () => {
               <Link href="https://www.facebook.com/brandedifycom/" target="_blank">
                 <img src="/images/fb.svg" />
               </Link>
+              <Link href="https://www.linkedin.com/company/brandedify" target="_blank">
+                <img src="/images/linkedin.svg" />
+              </Link>
               <Link href="https://www.instagram.com/brandedifycom/" target="_blank">
                 <img src="/images/inst.svg" />
                 <span>+3</span>

@@ -130,6 +130,9 @@ const Footer = () => {
               <Link href="https://www.facebook.com/brandedifycom/" target="_blank">
                 <img src="/images/foot_fb.svg" />
               </Link>
+              <Link href="https://www.linkedin.com/company/brandedify" target="_blank">
+                <img src="/images/foot_linkedin.svg" />
+              </Link>
               <Link href="https://www.instagram.com/brandedifycom/" target="_blank">
                 <img src="/images/foot_inst.svg" />
                 <span>+3</span>

@@ -85,14 +85,29 @@ const ContactRow = () => {
                 <h3>Follow Us on Social Media</h3>
                 <p>Stay connected with us for updates, tips, and insights:</p>
               </div>
-              <div>
-                <Link href="https://www.facebook.com/brandedifycom/" target="_blank">Facebook</Link>
-              </div>
-              <div>
-                <Link href="https://www.instagram.com/brandedifycom/" target="_blank">Instagram</Link>
-              </div>
-              <div>
-                <Link href="https://x.com/brandedify" target="_blank">Twitter</Link>
+              <div className="socials">
+                <Link href="https://x.com/brandedify" target="_blank">
+                  <img src="/images/foot_x.svg" />
+                </Link>
+                <Link
+                  href="https://www.facebook.com/brandedifycom/"
+                  target="_blank"
+                >
+                  <img src="/images/foot_fb.svg" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/brandedify"
+                  target="_blank"
+                >
+                  <img src="/images/foot_linkedin.svg" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/brandedifycom/"
+                  target="_blank"
+                >
+                  <img src="/images/foot_inst.svg" />
+                  <span>+3</span>
+                </Link>
               </div>
               <div className="image-wrap">
                 <Image src="/images/contact/contact.png" alt="social" fill />
