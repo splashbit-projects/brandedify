@@ -88,26 +88,6 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="company">
-            <div className="company__name">
-              <h4>Veltrix Global LTD</h4>
-              <span>Services in the UK and Europe</span>
-            </div>
-            <div className="company__address">
-              <h5>Office address:</h5>
-              <p>
-                10B Printing House Yard, Hackney Road, Shoreditch, London E2
-                (2nd Floor, Office 26)
-              </p>
-            </div>
-            <div className="company__address">
-              <h5>Registered address:</h5>
-              <p>
-                Silverstream House, Fitzroy Street, Fitzrovia, London, United
-                Kingdom, W1T 6EB
-              </p>
-            </div>
-          </div>
         </div>
       </div>
       <div className="details">
@@ -127,13 +107,22 @@ const Footer = () => {
               <Link href="https://x.com/brandedify" target="_blank">
                 <img src="/images/foot_x.svg" />
               </Link>
-              <Link href="https://www.facebook.com/brandedifycom/" target="_blank">
+              <Link
+                href="https://www.facebook.com/brandedifycom/"
+                target="_blank"
+              >
                 <img src="/images/foot_fb.svg" />
               </Link>
-              <Link href="https://www.linkedin.com/company/brandedify" target="_blank">
+              <Link
+                href="https://www.linkedin.com/company/brandedify"
+                target="_blank"
+              >
                 <img src="/images/foot_linkedin.svg" />
               </Link>
-              <Link href="https://www.instagram.com/brandedifycom/" target="_blank">
+              <Link
+                href="https://www.instagram.com/brandedifycom/"
+                target="_blank"
+              >
                 <img src="/images/foot_inst.svg" />
                 <span>+3</span>
               </Link>

@@ -40,26 +40,6 @@ const ContactRow = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="company">
-                    <div className="company__name">
-                      <h4>Veltrix Global LTD</h4>
-                      <span>UK and Europe</span>
-                    </div>
-                    <div className="company__address">
-                      <h5>Office address:</h5>
-                      <p>
-                        10B Printing House Yard, Hackney Road, Shoreditch,
-                        London E2 (2nd Floor, Office 26)
-                      </p>
-                    </div>
-                    <div className="company__address">
-                      <h5>Registered address:</h5>
-                      <p>
-                        Silverstream House, Fitzroy Street, Fitzrovia, London,
-                        United Kingdom, W1T 6EB
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div>
