@@ -135,7 +135,7 @@ const Footer = () => {
         <div className="_container">
           <div className="row">
             <p>
-              © {currentYear} Brandora PTE. LTD. Veltrix Global LTD. All Rights
+              © {currentYear} Brandora PTE. LTD. All Rights
               Reserved
             </p>
             <nav>
