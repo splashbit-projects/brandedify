@@ -5,7 +5,7 @@ date: "13 December, 2024"
 
 ## Introduction
 
-1.  At Brandedify, owned and operated by Brandora PTE. LTD, a company registered at 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413, with registration number 202449312C, and Veltrix Global LTD, registered at Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB, with registration number 16114936, accessible at [https://brandedify.com](https://brandedify.com/), we deeply value your trust in our services. While we are committed to delivering exceptional results, we adhere to a **no-refund policy** for all purchases on our website. Once a transaction is completed, it is considered final and non-refundable.
+1.  At Brandedify, owned and operated by Brandora PTE. LTD, a company registered at 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413, with registration number 202449312C, accessible at [https://brandedify.com](https://brandedify.com/), we deeply value your trust in our services. While we are committed to delivering exceptional results, we adhere to a **no-refund policy** for all purchases on our website. Once a transaction is completed, it is considered final and non-refundable.
 
 ## Your Responsibility as a Client
 

@@ -5,7 +5,7 @@ date: "13 December, 2024"
 
 ## Understanding and Accepting Our Policies
 
-1.  Welcome to Brandedify (“Company,” “we,” “us,” “our”), a brand owned and operated by Brandora PTE. LTD, a company registered at 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413, with registration number 202449312C, and Veltrix Global LTD, registered at Silverstream House, Fitzroy Street, Fitzrovia, London, United Kingdom, W1T 6EB, with registration number 16114936.
+1.  Welcome to Brandedify (“Company,” “we,” “us,” “our”), a brand owned and operated by Brandora PTE. LTD, a company registered at 133 New Bridge Road, #08-01, Chinatown Point, Singapore 059413, with registration number 202449312C.
 2.  We provide services through the website [https://brandedify.com](https://brandedify.com/) (the “Site”) and related services or products referencing these terms (collectively, the “Services”).
 3.  By using our Services, you agree to these Legal Terms. If you do not agree, please discontinue use immediately.
 4.  We may periodically update these Terms. The “Last Updated” date indicates the latest revision. Continued use of our Services signifies your acceptance of any updates.
@@ -134,14 +134,14 @@ Brandedify is not liable for damages or losses arising from:
 
 ## Handling Disputes and Applicable Legal Jurisdiction
 
-1.  **Applicable Law:** Any disputes arising from or related to the use of Brandedify’s Services will be governed by the laws of Singapore or the United Kingdom without regard to conflict-of-law principles. Singapore and the United Kingdom law provide the framework for interpreting and enforcing these Terms.
-2.  **Jurisdiction:** You agree to submit to the exclusive jurisdiction of the courts located in Singapore or the United Kingdom for the resolution of disputes. This ensures clarity and consistency in addressing legal matters.
-3.  **Legal Actions Outside Jurisdiction:** If If legal proceedings are initiated in a jurisdiction outside of Singapore and the United Kingdom, you agree to indemnify Brandedify for all associated legal costs, administrative fees, and expenses incurred in addressing the case in the alternative jurisdiction.
+1.  **Applicable Law:** Any disputes arising from or related to the use of Brandedify’s Services will be governed by the laws of Singapore without regard to conflict-of-law principles. Singapore law provide the framework for interpreting and enforcing these Terms.
+2.  **Jurisdiction:** You agree to submit to the exclusive jurisdiction of the courts located in Singapore for the resolution of disputes. This ensures clarity and consistency in addressing legal matters.
+3.  **Legal Actions Outside Jurisdiction:** If If legal proceedings are initiated in a jurisdiction outside of Singapore, you agree to indemnify Brandedify for all associated legal costs, administrative fees, and expenses incurred in addressing the case in the alternative jurisdiction.
 4.  **Dispute Resolution Process:**
 
-- **Pre-Litigation Efforts:** Both parties agree to attempt resolution through good-faith dialogue or mediation before pursuing formal legal action. If necessary, a mutually agreed-upon mediator will conduct mediation sessions in Singapore or the United Kingdom.
-- **Court Proceedings:** If mediation fails, disputes will be addressed in Singapore or the United Kingdom courts, where the prevailing party is entitled to recover reasonable attorney fees and court costs.
-- **Limitations Period:** Singapore and the United Kingdom law requires that claims or actions be brought within one year of the cause of action arising unless otherwise required.
+- **Pre-Litigation Efforts:** Both parties agree to attempt resolution through good-faith dialogue or mediation before pursuing formal legal action. If necessary, a mutually agreed-upon mediator will conduct mediation sessions in Singapore.
+- **Court Proceedings:** If mediation fails, disputes will be addressed in Singapore courts, where the prevailing party is entitled to recover reasonable attorney fees and court costs.
+- **Limitations Period:** Singapore law requires that claims or actions be brought within one year of the cause of action arising unless otherwise required.
 
 ## Additional Terms and Legal Clarifications
 
